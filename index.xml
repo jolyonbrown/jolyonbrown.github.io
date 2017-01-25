@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jolyonbrown.com</title>
-    <link>https://jolyonbrown.github.io/index.xml</link>
+    <link>https://jolyonbrown.com/index.xml</link>
     <description>Recent content on jolyonbrown.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Jul 2014 10:54:24 +0200</lastBuildDate>
-    <atom:link href="https://jolyonbrown.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>https://jolyonbrown.github.io/page/about/</link>
+      <link>https://jolyonbrown.com/page/about/</link>
       <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
       
-      <guid>https://jolyonbrown.github.io/page/about/</guid>
+      <guid>https://jolyonbrown.com/page/about/</guid>
       <description>&lt;p&gt;I am awesome&lt;/p&gt;
 </description>
     </item>
