@@ -19,7 +19,16 @@
 
 &lt;p&gt;A CREATE FUNCTION statement looked like this in the file in question:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;CREATE FUNCTION function_name(variable name type) RETURNS another_variable LANGUAGE plpgsql AS $$                     DECLARE                 ...         &amp;lt;Various SQL statements&amp;gt;         ... END; $$;
+&lt;pre&gt;&lt;code&gt;CREATE FUNCTION function_name(variable name type) RETURNS
+another_variable
+LANGUAGE plpgsql
+AS $$
+    DECLARE
+    ...
+    &amp;lt;Various SQL statements&amp;gt;
+    ...
+END;
+$$;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The $$; sequence was replaced by $_$ in other functions for some reason (personal preference of whoever wrote it I guess). The desired name for the output file would be ‘function_name’ in this example.&lt;/p&gt;
