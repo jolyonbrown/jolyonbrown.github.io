@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on jolyonbrown.com</title>
+    <title>Posts on Jolyon Brown</title>
     <link>https://jolyonbrown.github.io/post/index.xml</link>
-    <description>Recent content in Posts on jolyonbrown.com</description>
+    <description>Recent content in Posts on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
+    <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
     <lastBuildDate>Wed, 10 Sep 2014 10:54:24 +0200</lastBuildDate>
     <atom:link href="https://jolyonbrown.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +15,7 @@
       <title>Awk: Set Output Filename Variable via Field Contents</title>
       <link>https://jolyonbrown.github.io/post/awk-set-filename-variable-by-field-contents/</link>
       <pubDate>Wed, 10 Sep 2014 10:54:24 +0200</pubDate>
-      
+      <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.github.io/post/awk-set-filename-variable-by-field-contents/</guid>
       <description>&lt;p&gt;I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy? There was a lot of other stuff in the file, the functions were of varying length and split over a number of lines and had a couple of differing closing parameters. Awk was obviously the go-to tool here, but the request had the added complication that each function had to be stored in a seperate output file, named after the function that was being extracted into it. While matching between two patterns is easy in awk, I had some struggle finding out how to dump lines into a file whose name was set by a variable which was in turn set by the contents of a field. Google failed me so I’ve posted this in the hope it helps some other poor soul and saves them the syntax errors I endured figuring it out.&lt;/p&gt;
 
