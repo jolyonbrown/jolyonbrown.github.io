@@ -61,6 +61,8 @@ $$;
 &lt;p&gt;The INPUT.sql is merely the file awk reads from.&lt;/p&gt;
 
 &lt;p&gt;The result – a long manual edit avoided and many small files, correctly named and containing the correct statements. Good old awk.&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;&lt;em&gt;Update (2017). I&amp;rsquo;ve moved this page from my old blog (the only surviving post!) as it occasionally gets hits for very obscure awk related searches. Hopefully has helped someone out in the last few years..&lt;/em&gt;&lt;/sup&gt;&lt;/p&gt;
 </description>
     </item>
     
