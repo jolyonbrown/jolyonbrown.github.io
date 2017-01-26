@@ -15,17 +15,19 @@
       <pubDate>Wed, 10 Sep 2014 10:54:24 +0200</pubDate>
       
       <guid>https://jolyonbrown.github.io/post/awk-set-filename-variable-by-field-contents/</guid>
-      <description>&lt;p&gt;I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database amd wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy? There was a lot of other stuff in the file, the functions were of varying length and split over a number of lines and had a couple of differing closing parameters. Awk was obviously the go-to tool here, but the request had the added complication that each function had to be stored in a seperate output file, named after the function that was being extracted into it. While matching between two patterns is easy in awk, I had some struggle finding out how to dump lines into a file whose name was set by a variable which was in turn set by the contents of a field. Google failed me so I’ve posted this in the hope it helps some other poor soul and saves them the syntax errors I endured figuring it out.&lt;/p&gt;
+      <description>&lt;p&gt;I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy? There was a lot of other stuff in the file, the functions were of varying length and split over a number of lines and had a couple of differing closing parameters. Awk was obviously the go-to tool here, but the request had the added complication that each function had to be stored in a seperate output file, named after the function that was being extracted into it. While matching between two patterns is easy in awk, I had some struggle finding out how to dump lines into a file whose name was set by a variable which was in turn set by the contents of a field. Google failed me so I’ve posted this in the hope it helps some other poor soul and saves them the syntax errors I endured figuring it out.&lt;/p&gt;
 
 &lt;p&gt;A CREATE FUNCTION statement looked like this in the file in question:&lt;/p&gt;
 
-&lt;p&gt;CREATE FUNCTION function_name(variable name type) RETURNS another_variable LANGUAGE plpgsql AS $$                     DECLARE                 &amp;hellip;         &lt;Various SQL statements&gt;         &amp;hellip; END; $$;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CREATE FUNCTION function_name(variable name type) RETURNS another_variable LANGUAGE plpgsql AS $$                     DECLARE                 ...         &amp;lt;Various SQL statements&amp;gt;         ... END; $$;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The $$; sequence was replaced by $_$ in other functions for some reason (personal preference of whoever wrote it I guess). The desired name for the output file would be ‘function_name’ in this example.&lt;/p&gt;
 
 &lt;p&gt;Here’s the (one liner of course) awk statement I ended up using (you may need to scroll to see the whole thing):&lt;/p&gt;
 
-&lt;p&gt;awk -F&amp;rsquo; |[(]&amp;rsquo; &amp;lsquo;/CREATE FUNCTION/ {p=1;name=$3}; p {print &amp;gt; name}; /\$\$;|\$_\$;/ {p=0;close(name)}; &amp;lsquo; INPUT.sql&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;awk -F&#39; |[(]&#39; &#39;/CREATE FUNCTION/ {p=1;name=$3}; p {print &amp;gt; name}; /\$\$;|\$_\$;/ {p=0;close(name)}; &#39; INPUT.sql
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;A brief explanation. The parameters to the -F set the awk field delimiter to either (thanks to the | symbol) a space ’ ’ or open bracket &lt;a href=&#34;the square brackets being used to escape the regular one&#34;&gt;(&lt;/a&gt;.&lt;/p&gt;
 
