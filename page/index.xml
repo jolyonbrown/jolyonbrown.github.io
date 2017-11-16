@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Jolyon Brown</title>
-    <link>https://jolyonbrown.github.io/page/index.xml</link>
+    <link>https://jolyonbrown.com/page/index.xml</link>
     <description>Recent content in Pages on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
     <lastBuildDate>Thu, 26 Jan 2017 10:54:24 +0200</lastBuildDate>
-    <atom:link href="https://jolyonbrown.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jolyonbrown.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>https://jolyonbrown.github.io/page/about/</link>
+      <link>https://jolyonbrown.com/page/about/</link>
       <pubDate>Thu, 26 Jan 2017 10:54:24 +0200</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
-      <guid>https://jolyonbrown.github.io/page/about/</guid>
+      <guid>https://jolyonbrown.com/page/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ll fill this in eventually&amp;hellip;&lt;/p&gt;
 </description>
     </item>
