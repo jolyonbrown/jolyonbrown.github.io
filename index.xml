@@ -8,8 +8,22 @@
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
-    <lastBuildDate>Thu, 26 Jan 2017 10:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A social media sabbatical</title>
+      <link>https://jolyonbrown.com/post/a-social-media-sabbatical/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      <guid>https://jolyonbrown.com/post/a-social-media-sabbatical/</guid>
+      <description>&lt;p&gt;Something I&amp;rsquo;ve really struggled with in the last few years is starting projects and never getting them finished. I&amp;rsquo;ve items on my personal development to do list which have been there for longer than I can remember. Courses (paid for, in some cases) sit half completed. Websites and apps gather dust in version controlled repos, never destined to see the light of day. This blog is a prime example. I avoid looking at the dozens of draft, never to be published posts that litter my source directories.&lt;/p&gt;
+
+&lt;p&gt;I now recognise that this is partly down to wasting the free time that I do have on activities that are ultimately worthless. For example, I find it shockingly easy to sink time into Twitter that could be spent doing something else. Worse still, I&amp;rsquo;ve started to get the creeping feeling that catching up with my Twitter feeds - time which I once thought of as being a useful investment, keeping up to date with both the state of the world and developments in my professional sphere - is detrimental to my (or anyone elses for that matter) cognitive health. I&amp;rsquo;ve begun to think of the pieces of information inhaled from Twitter on a daily basis as being a bit like the calories you get from alcohol. Ingesting them is pleasurable at the time, but ultimately they&amp;rsquo;re worthless in terms of nutrition and probably bad for you in the long run.&lt;/p&gt;
+
+&lt;p&gt;So I was very interested by one of the best audiobooks I&amp;rsquo;ve bought in the last twelve months: Cal Newport&amp;rsquo;s &lt;i&gt;Deep Work - Rules for focused success in a distracted world&lt;/i&gt;. In it, Newport describes &amp;ldquo;Deep Work&amp;rdquo; as being the ability to focus without distraction on cognitively demanding tasks. This is the kind of state I want to achieve in order to start completing some of the work I want to do. One of his recommendations for getting there is to quit or switch to the controlled use of social media. A bit like giving up beer and wine for a month (which I&amp;rsquo;ve started to do each January), I think the potential benefits make it worth trying; so I&amp;rsquo;m going cold turkey on Twitter until sometime in 2018, after which I&amp;rsquo;ll only use it in a controlled manner. The worst that can happen is I still don&amp;rsquo;t get this work done, but I miss out on some anger and stress around the state of UK politics/Brexit and Trump. Stuff I have no influence over anyway. I can live with that.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>about</title>
@@ -63,20 +77,6 @@ $$;
 &lt;p&gt;The result – a long manual edit avoided and many small files, correctly named and containing the correct statements. Good old awk.&lt;/p&gt;
 
 &lt;p&gt;&lt;sup&gt;&lt;em&gt;Update (2017). I&amp;rsquo;ve moved this page from my old blog (the only surviving post!) as it occasionally gets hits for very obscure awk related searches. Hopefully has helped someone out in the last few years..&lt;/em&gt;&lt;/sup&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A social media sabbatical</title>
-      <link>https://jolyonbrown.com/post/a-social-media-sabbatical/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
-      <guid>https://jolyonbrown.com/post/a-social-media-sabbatical/</guid>
-      <description>&lt;p&gt;Something I&amp;rsquo;ve really struggled with in the last few years is starting projects and never getting them finished. I&amp;rsquo;ve items on my personal development to do list which have been there for longer than I can remember. Courses (paid for, in some cases) sit half completed. Websites and apps gather dust in version controlled repos, never destined to see the light of day. This blog is a prime example. I avoid looking at the dozens of draft, never to be published posts that litter my source directories.&lt;/p&gt;
-
-&lt;p&gt;I now recognise that this is partly down to wasting the free time that I do have on activities that are ultimately worthless. For example, I find it shockingly easy to sink time into Twitter that could be spent doing something else. Worse still, I&amp;rsquo;ve started to get the creeping feeling that catching up with my Twitter feeds - time which I once thought of as being a useful investment, keeping up to date with both the state of the world and developments in my professional sphere - is detrimental to my (or anyone elses for that matter) cognitive health. I&amp;rsquo;ve begun to think of the pieces of information inhaled from Twitter on a daily basis as being a bit like the calories you get from alcohol. Ingesting them is pleasurable at the time, but ultimately they&amp;rsquo;re worthless in terms of nutrition and probably bad for you in the long run.&lt;/p&gt;
-
-&lt;p&gt;So I was very interested by one of the best audiobooks I&amp;rsquo;ve bought in the last twelve months: Cal Newport&amp;rsquo;s &lt;i&gt;Deep Work - Rules for focused success in a distracted world&lt;/i&gt;. In it, Newport describes &amp;ldquo;Deep Work&amp;rdquo; as being the ability to focus without distraction on cognitively demanding tasks. This is the kind of state I want to achieve in order to start completing some of the work I want to do. One of his recommendations for getting there is to quit or switch to the controlled use of social media. A bit like giving up beer and wine for a month (which I&amp;rsquo;ve started to do each January), I think the potential benefits make it worth trying; so I&amp;rsquo;m going cold turkey on Twitter until sometime in 2018, after which I&amp;rsquo;ll only use it in a controlled manner. The worst that can happen is I still don&amp;rsquo;t get this work done, but I miss out on some anger and stress around the state of UK politics/Brexit and Trump. Stuff I have no influence over anyway. I can live with that.&lt;/p&gt;
 </description>
     </item>
     
