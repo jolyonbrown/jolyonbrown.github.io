@@ -8,8 +8,24 @@
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
-    <lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nethack64 Part 1</title>
+      <link>https://jolyonbrown.com/post/nethack64-part-1/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      <guid>https://jolyonbrown.com/post/nethack64-part-1/</guid>
+      <description>&lt;p&gt;So far on this project I&amp;rsquo;ve done a bit of background reading and information gathering. &lt;a href=&#34;http://nethack.org&#34;&gt;Nethack.org&lt;/a&gt; is the first place to go for all things Nethack code related of course. One thing I spotted early on was the news that the current version - 3.6 - is relatively new and includes a lot of additional code and tidying up of the venerable 3.4 branches. The development team also took the decision to no longer worry about optimising for older, memory constrained platforms (which I guess includes the aforementioned Amiga). They do ask for anyone who manages to get 3.6 up and running on these sorts of systems to let them know how they get on. As I’m developing for a machine with memory constraints way beyond anything in the list of supported platforms I&amp;rsquo;ve made the decision to stick with the 3.4 branch. If I manage that, then perhaps I can re-use my knowledge to tackle the 3.6 branch. But I doubt that will happen.&lt;/p&gt;
+
+&lt;p&gt;I was also reminded that the game requires 80 columns. The C64 only had a 40x25 screen, but I recall many implementations of 80 columns from back in the day (when it was being pushed as a &amp;lsquo;proper&amp;rsquo; business friendly machine). A quick google brought me up some options for that on the code front, so that’s a tick in the box right from the start. I suppose I could try and adapt it to 40 columns though if I really get stuck.&lt;/p&gt;
+
+&lt;p&gt;Given that limited memory is going to be the killer obstacle here by my reckoning, I looked around for details of something I recall being done later on in the C64’s lifetime - using the floppy drive as a swapfile (essentially making more memory available). After a bit of hunting and with some help on the great &lt;a href=&#34;https://www.reddit.com/r/c64/&#34;&gt;/r/c64&lt;/a&gt; subreddit, I’ve a couple of avenues to investigate. GEOS did something along these lines, as did Infocom apparently. I also had a reminder that using the spare CPU in the 1541 might be worth looking into as well. One thing I do have to my advantage is that Nethack is turn based, so having to squeeze in a ton of processing every &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;60&lt;/sub&gt; of a second isn’t likely to be a problem for me. Dealing with the slow serial bus might be worth it for some extra cpu capacity.&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&#34;http://nethack.org/v343/download-src.html&#34;&gt;downloaded&lt;/a&gt; version 3.4 of the Netback code (which unfortunately isn&amp;rsquo;t held on Github like the 3.6 branch) and found a ton of helpful README type notes in there, including some specific notes around porting. Excellent. Now to get familiar with how this game works..&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Converting Nethack to the C64</title>

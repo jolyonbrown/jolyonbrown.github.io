@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Converting Nethack to the C64</title>
+  <title>Nethack64 Part 1</title>
 
   <meta name="author" content="Jolyon Brown" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://jolyonbrown.com/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="Converting Nethack to the C64" />
+  <meta property="og:title" content="Nethack64 Part 1" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/post/converting-nethack-to-the-c64//" />
+  <meta property="og:url" content="/post/nethack64-part-1//" />
   <meta property="og:image" content="" />
 
   <script src="//load.sumome.com/" data-sumo-site-id="4af41100d66c8400ba126e006ba91100136040008d2ab300bada1b00bd22ef00" async="async"></script>
@@ -92,11 +92,11 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading">
-          <h1>Converting Nethack to the C64</h1>
+          <h1>Nethack64 Part 1</h1>
       
       
       
-      <span class="post-meta">Posted on January 11, 2018</span>
+      <span class="post-meta">Posted on January 12, 2018</span>
       
         </div>
       </div>
@@ -112,38 +112,22 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-          <p>2018 has started off pretty well as far as time management goes. I&rsquo;ve actually begun to make some progress on hitherto stalled projects which I&rsquo;ll talk about in my next few posts. Its amazing the amount of time ditching idle browsing and keeping up with Twitter frees up.</p>
+          <p>So far on this project I&rsquo;ve done a bit of background reading and information gathering. <a href="http://nethack.org">Nethack.org</a> is the first place to go for all things Nethack code related of course. One thing I spotted early on was the news that the current version - 3.6 - is relatively new and includes a lot of additional code and tidying up of the venerable 3.4 branches. The development team also took the decision to no longer worry about optimising for older, memory constrained platforms (which I guess includes the aforementioned Amiga). They do ask for anyone who manages to get 3.6 up and running on these sorts of systems to let them know how they get on. As I’m developing for a machine with memory constraints way beyond anything in the list of supported platforms I&rsquo;ve made the decision to stick with the 3.4 branch. If I manage that, then perhaps I can re-use my knowledge to tackle the 3.6 branch. But I doubt that will happen.</p>
 
-<p>Thanks to being born in the early seventies, my middle childhood and teenage years coincided with the eighties British computer revolution. I can’t emphasise enough the impact of this on me at the time. I lived and breathed these new machines. To cut a long story short, I ended up with a Commodore 64 and was completely obsessed with knowing everything about it. I owe my entire career to that time and to that machine in particular.</p>
+<p>I was also reminded that the game requires 80 columns. The C64 only had a 40x25 screen, but I recall many implementations of 80 columns from back in the day (when it was being pushed as a &lsquo;proper&rsquo; business friendly machine). A quick google brought me up some options for that on the code front, so that’s a tick in the box right from the start. I suppose I could try and adapt it to 40 columns though if I really get stuck.</p>
 
-<p>Fast forward 30-odd years (insert horrified emoji here) and I’m delighted that retro computing is undergoing somewhat of a renaissance, with the C64 in particular seeing a bunch of new games and demos being written for it. Some of the stuff getting posted to the <a href="https://www.reddit.com/r/c64/">/r/c64</a> subreddit these days is quite amazing. I&rsquo;ve been following development of <a href="https://sarahjaneavory.wordpress.com/category/briley-witch-rpg/">this RPG</a> by Sarah Jane Avory with particular interest for example. New fanzines like <a href="https://freeze64.com/">Freeze64</a> and the showcase of games on <a href="https://itch.io/search?q=c64">Itch.io</a> show how much love there still is out there for the good old breadbin.</p>
+<p>Given that limited memory is going to be the killer obstacle here by my reckoning, I looked around for details of something I recall being done later on in the C64’s lifetime - using the floppy drive as a swapfile (essentially making more memory available). After a bit of hunting and with some help on the great <a href="https://www.reddit.com/r/c64/">/r/c64</a> subreddit, I’ve a couple of avenues to investigate. GEOS did something along these lines, as did Infocom apparently. I also had a reminder that using the spare CPU in the 1541 might be worth looking into as well. One thing I do have to my advantage is that Nethack is turn based, so having to squeeze in a ton of processing every <sup>1</sup>&frasl;<sub>60</sub> of a second isn’t likely to be a problem for me. Dealing with the slow serial bus might be worth it for some extra cpu capacity.</p>
 
-<p>So a while back I pondered starting a project to contribute to this reawakened scene, without being quite sure what to do. Having seen just about every demo with a scroll text back in the day I didn’t think the world needed any more of those. There wasn&rsquo;t a huge amount of spare time to create a game from scratch. What about, I wondered, doing a conversion? That would mean not having to figure out gameplay, and perhaps graphics and sound might be easier too. What game did the C64 miss out on, back then?</p>
-
-<p>By coincidence I happened across a <a href="https://www.reddit.com/r/gamedev/comments/5r4f2c/two_years_of_roguelike_development_faqs/">list</a> of ‘rogue like’ game development FAQs on Reddit which reminded me of <a href="https://en.wikipedia.org/wiki/NetHack">Nethack</a>, the classic old text based game. I could port that. Perfect. The C64 was known for it’s PETSCII character set, so that hopefully bodes well. I don’t even remember it having any sound.. plus the code is open source!</p>
-
-<p>Surely, I thought, this must have been done already? A good search around suggested it hadn’t (although there were some similar old games). I&rsquo;m not underestimating the difficulty here though - the least powerful system I ever personally saw Nethack running on was an Amiga back in the day, which had way more resources than the C64 ever had.</p>
-
-<p>So yes, I’m porting an old game to an old platform for the love and challenge of it.</p>
-
-<p>I&rsquo;ve decided to set myself some limitations: I’m not expecting this done be done in a hurry. Likely I&rsquo;ll only have a few hours a month to work on this. There’s no rush. No deadlines. I do want it to run on a stock C64 with disk drive if possible, so at least a few hours will be spent reviving my old setup, which is languishing in the garage at the moment.</p>
-
-<p align="center">
-  <img src="https://jolyonbrown.com/img/Nethack_screenshot.png" alt="Nethack screenshot">
-</p>
+<p>I <a href="http://nethack.org/v343/download-src.html">downloaded</a> version 3.4 of the Netback code (which unfortunately isn&rsquo;t held on Github like the 3.6 branch) and found a ton of helpful README type notes in there, including some specific notes around porting. Excellent. Now to get familiar with how this game works..</p>
 
       </article>
 
       <ul class="pager blog-pager">
         
         <li class="previous">
-          <a href="https://jolyonbrown.com/post/a-dos-attack-on-your-free-will/" data-toggle="tooltip" data-placement="top" title="A DoS attack on your free will">&larr; Previous Post</a>
+          <a href="https://jolyonbrown.com/post/converting-nethack-to-the-c64/" data-toggle="tooltip" data-placement="top" title="Converting Nethack to the C64">&larr; Previous Post</a>
         </li>
         
-        
-        <li class="next">
-          <a href="https://jolyonbrown.com/post/nethack64-part-1/" data-toggle="tooltip" data-placement="top" title="Nethack64 Part 1">Next Post &rarr;</a>
-        </li>
         
       </ul>
 
