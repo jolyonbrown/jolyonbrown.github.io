@@ -27,13 +27,13 @@
 
 &lt;p&gt;By coincidence I happened across a &lt;a href=&#34;https://www.reddit.com/r/gamedev/comments/5r4f2c/two_years_of_roguelike_development_faqs/&#34;&gt;list&lt;/a&gt; of ‘rogue like’ game development FAQs on Reddit which reminded me of &lt;a href=&#34;https://en.wikipedia.org/wiki/NetHack&#34;&gt;Nethack&lt;/a&gt;, the classic old text based game. I could port that. Perfect. The C64 was known for it’s PETSCII character set, so that hopefully bodes well. I don’t even remember it having any sound.. plus the code is open source!&lt;/p&gt;
 
-&lt;p&gt;Surely this must have been done already? A good search around suggests it hadn’t (although there were some similar old games). I&amp;rsquo;m not underestimating the difficulty here though - the least powerful system I ever personally saw Nethack running on was an Amiga back in the day, which was way more powerful than the C64 was.&lt;/p&gt;
+&lt;p&gt;Surely, I thought, this must have been done already? A good search around suggested it hadn’t (although there were some similar old games). I&amp;rsquo;m not underestimating the difficulty here though - the least powerful system I ever personally saw Nethack running on was an Amiga back in the day, which had way more resources than the C64 ever had.&lt;/p&gt;
 
 &lt;p&gt;So yes, I’m porting an old game to an old platform for the love and challenge of it.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve decided to set myself some limitations: I’m not expecting this done be done in a hurry. Likely I&amp;rsquo;ll only have a few hours a month to work on this. There’s no rush. No deadlines. I do want it to run on a stock C64 with disk drive if possible, so at least a few hours will be spent reviving my old setup, which is languishing in the garage at the moment.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;{{ site.url }}/assets/Nethack_screenshot.png&#34; alt=&#34;Nethack&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jolyonbrown.com/Nethack_screenshot.png&#34; alt=&#34;Nethack&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
