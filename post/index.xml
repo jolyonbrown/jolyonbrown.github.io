@@ -8,8 +8,40 @@
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
-    <lastBuildDate>Fri, 12 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jolyonbrown.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Formula Pi</title>
+      <link>https://jolyonbrown.com/post/formula-pi/</link>
+      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      <guid>https://jolyonbrown.com/post/formula-pi/</guid>
+      <description>&lt;p&gt;Something else I&amp;rsquo;ve been looking at since late on in 2017 is &lt;a href=&#34;http://formulapi.com&#34;&gt;FormulaPi&lt;/a&gt;. I&amp;rsquo;ve been interested in machine learning/artificial intelligence for a while, so coming across a competition where you can program a Raspberry Pi based robot to race against competitors (and have the organisers handle literally everything else) was appealing right from the off. I managed to grab a slot for the winter season just before the closing date for entries. At the time of writing the event is just about to enter it&amp;rsquo;s second round of competition proper (there have been a few practice sessions).&lt;/p&gt;
+
+&lt;p&gt;After paying the entry fee (a modest £37), I was given access to the standard code for the robots (along with a branch containing the previous seasons winning effort). The robots this season are &lt;a href=&#34;https://www.piborg.org/robots/monsterborg&#34;&gt;MonsterBorgs&lt;/a&gt; - pretty robust bits of kit that use a &amp;ldquo;Thunderborg&amp;rdquo; motor controller (both sold by &lt;a href=&#34;https://www.piborg.org&#34;&gt;Piborg&lt;/a&gt; who also organise the competition). The &amp;lsquo;borgs have a &amp;lsquo;standard&amp;rsquo; Raspberry Pi camera on their front. No fancy LiDAR here! This is all computer vision based. All the cars are configured exactly the same way hardware wise and the organisers take care of installing the software on the robots locally and running the races, broadcasting them live on YouTube. They even have little overlays introducing each competitor!&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://jolyonbrown.com/img/formulapigraphic.png&#34; alt=&#34;Team Limilo&#34;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The default code is all Python based and uses the modules you might expect when it comes to interpreting input from the camera (cv,numpy). The track as seen from the picture here is divided into different coloured lanes to aid the robot when it tries to identify where it is (and which direction it&amp;rsquo;s travelling in!). The base code does a great job of getting the robot around the track and avoiding obstacles (other robots), but in order to be competitive tweaks (or wholesale changes) are encouraged/necessary. The code package comes with a cool little track simulator which can feeds the running code generated images of the track (along with other cars). The competition website has a bunch of information on each bit of the code base and there is a friendly forum too.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://jolyonbrown.com/img/formulapitrack.png&#34; alt=&#34;Formula Pi Track&#34;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The whole thing is great fun. As this is Team Limilo&amp;rsquo;s (my companies name - hey, free publicity) first season I&amp;rsquo;d be ecstatic if I even get to be competitive before the end of it (the team has unfortunately suffered a couple of starting line failures already). There are a bunch of things to think about. I&amp;rsquo;ve decided to experiment first on making the platform that controls the car a bit quicker (switching to Cython from Python, bumping the OpenCV version etc) so that I can free up some resources for the model I&amp;rsquo;m attempting to create and train for better collision avoidance. I haven&amp;rsquo;t looked at the Thunderborg controller itself yet but will at some point - I&amp;rsquo;ve seen a couple of other competitors manage to pull off some tighter turns than the default code can manage and assume this is where they&amp;rsquo;ve spent some of their time.&lt;/p&gt;
+
+&lt;p&gt;This is a cool little entrypoint to autonomous vehicle development and robotics. I thoroughly recommend it. Having awakened my inner F1 team owner, Team Limilo has already signed up for the Summer 2018 series - and the shareholders are expecting results.&lt;/p&gt;
+
+&lt;p&gt;(Of course Team Limilo had to purchase it&amp;rsquo;s own Monsterborg for development and performance testing too)&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://jolyonbrown.com/img/monsterborg.jpg&#34; alt=&#34;Monsterborg&#34;&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Nethack64 Part 1</title>
