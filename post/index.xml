@@ -8,16 +8,16 @@
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
-    <lastBuildDate>Tue, 16 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jolyonbrown.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Formula Pi</title>
       <link>https://jolyonbrown.com/post/formula-pi/</link>
-      <pubDate>Tue, 16 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/formula-pi/</guid>
-      <description>&lt;p&gt;Something else I&amp;rsquo;ve been looking at since late on in 2017 is &lt;a href=&#34;http://formulapi.com&#34;&gt;FormulaPi&lt;/a&gt;. I&amp;rsquo;ve been interested in machine learning/artificial intelligence for a while, so coming across a competition where you can program a Raspberry Pi based robot to race against competitors (and have the organisers handle literally everything else) was appealing right from the off. I managed to grab a slot for the winter season just before the closing date for entries. At the time of writing the event is just about to enter it&amp;rsquo;s second round of competition proper (there have been a few practice sessions).&lt;/p&gt;
+      <description>&lt;p&gt;Something else I&amp;rsquo;ve been looking at since late on in 2017 is &lt;a href=&#34;https://www.formulapi.com&#34;&gt;Formula Pi&lt;/a&gt;. I&amp;rsquo;ve been interested in machine learning/artificial intelligence for a while, so coming across a competition where you can program a Raspberry Pi based robot to race against competitors (and have the organisers handle literally everything else) was appealing right from the off. I managed to grab a slot for the winter season just before the closing date for entries. At the time of writing the event is just about to enter it&amp;rsquo;s second round of competition proper (there have been a few practice sessions).&lt;/p&gt;
 
 &lt;p&gt;After paying the entry fee (a modest £37), I was given access to the standard code for the robots (along with a branch containing the previous seasons winning effort). The robots this season are &lt;a href=&#34;https://www.piborg.org/robots/monsterborg&#34;&gt;MonsterBorgs&lt;/a&gt; - pretty robust bits of kit that use a &amp;ldquo;Thunderborg&amp;rdquo; motor controller (both sold by &lt;a href=&#34;https://www.piborg.org&#34;&gt;Piborg&lt;/a&gt; who also organise the competition). The &amp;lsquo;borgs have a &amp;lsquo;standard&amp;rsquo; Raspberry Pi camera on their front. No fancy LiDAR here! This is all computer vision based. All the cars are configured exactly the same way hardware wise and the organisers take care of installing the software on the robots locally and running the races, broadcasting them live on YouTube. They even have little overlays introducing each competitor!&lt;/p&gt;
 
