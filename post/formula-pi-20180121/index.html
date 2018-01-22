@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Formula Pi</title>
+  <title>Formula Pi Winter 2017/18 - Update</title>
 
   <meta name="author" content="Jolyon Brown" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://jolyonbrown.com/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="Formula Pi" />
+  <meta property="og:title" content="Formula Pi Winter 2017/18 - Update" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/post/formula-pi//" />
+  <meta property="og:url" content="/post/formula-pi-20180121//" />
   <meta property="og:image" content="" />
 
   <script src="//load.sumome.com/" data-sumo-site-id="4af41100d66c8400ba126e006ba91100136040008d2ab300bada1b00bd22ef00" async="async"></script>
@@ -92,11 +92,11 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading">
-          <h1>Formula Pi</h1>
+          <h1>Formula Pi Winter 2017/18 - Update</h1>
       
       
       
-      <span class="post-meta">Posted on January 17, 2018</span>
+      <span class="post-meta">Posted on January 21, 2018</span>
       
         </div>
       </div>
@@ -112,42 +112,22 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-          <p>Something else I&rsquo;ve been looking at since late on in 2017 is <a href="https://www.formulapi.com">Formula Pi</a>. I&rsquo;ve been interested in machine learning/artificial intelligence for a while, so coming across a competition where you can program a Raspberry Pi based robot to race against competitors (and have the organisers handle literally everything else) was appealing right from the off. I managed to grab a slot for the winter season just before the closing date for entries. At the time of writing the event is just about to enter it&rsquo;s second round of competition proper (there have been a few practice sessions).</p>
-
-<p>After paying the entry fee (a modest £37), I was given access to the standard code for the robots (along with a branch containing the previous seasons winning effort). The robots this season are <a href="https://www.piborg.org/robots/monsterborg">MonsterBorgs</a> - pretty robust bits of kit that use a &ldquo;Thunderborg&rdquo; motor controller (both sold by <a href="https://www.piborg.org">Piborg</a> who also organise the competition). The &lsquo;borgs have a &lsquo;standard&rsquo; Raspberry Pi camera on their front. No fancy LiDAR here! This is all computer vision based. All the cars are configured exactly the same way hardware wise and the organisers take care of installing the software on the robots locally and running the races, broadcasting them live on YouTube. They even have little overlays introducing each competitor!</p>
+          <p>After a miserable starting line failure for the first event proper of the Winter <sup>17</sup>&frasl;<sub>18</sub> season, last week the Team Limilo robot finished a creditable third in it&rsquo;s heat, clocking up 14 laps. I say creditable, because on the first corner it ended up in a crash (of it&rsquo;s own making - the draw saw it placed on the outside lane and it tried to cut across to the inside) which saw it stranded up on the barrier while the frontrunners clocked up a few laps. Eventually it freed itself but spent the next minutes upside down (which due to the restricted camera view at that angle seems to cause all kinds of problems). To be honest, the car carried on causing problems for other competitors getting in the way, but at some point it got flipped back up the right way and started to get some clean laps in and looked pretty quick. I was quite proud of this moment here as it caught an overtook one of the leaders:</p>
 
 <p align="center" width=100>
-  <img src="https://jolyonbrown.com/img/formulapigraphic.png" alt="Team Limilo">
+  <img src="https://jolyonbrown.com/img/borgundertake.gif" alt="Undertake">
 </p>
 
-<p>The default code is all Python based and uses the modules you might expect when it comes to interpreting input from the camera (cv,numpy). The track as seen from the picture here is divided into different coloured lanes to aid the robot when it tries to identify where it is (and which direction it&rsquo;s travelling in!). The base code does a great job of getting the robot around the track and avoiding obstacles (other robots), but in order to be competitive tweaks (or wholesale changes) are encouraged/necessary. The code package comes with a cool little track simulator which can feeds the running code generated images of the track (along with other cars). The competition website has a bunch of information on each bit of the code base and there is a friendly forum too.</p>
-
-<p align="center" width=100>
-  <img src="https://jolyonbrown.com/img/formulapitrack.png" alt="Formula Pi Track">
-</p>
-
-<p>The whole thing is great fun. As this is Team Limilo&rsquo;s (my companies name - hey, free publicity) first season I&rsquo;d be ecstatic if I even get to be competitive before the end of it (the team has unfortunately suffered a couple of starting line failures already). There are a bunch of things to think about. I&rsquo;ve decided to experiment first on making the platform that controls the car a bit quicker (switching to Cython from Python, bumping the OpenCV version etc) so that I can free up some resources for the model I&rsquo;m attempting to create and train for better collision avoidance. I haven&rsquo;t looked at the Thunderborg controller itself yet but will at some point - I&rsquo;ve seen a couple of other competitors manage to pull off some tighter turns than the default code can manage and assume this is where they&rsquo;ve spent some of their time.</p>
-
-<p>This is a cool little entrypoint to autonomous vehicle development and robotics. I thoroughly recommend it. Having awakened my inner F1 team owner, Team Limilo has already signed up for the Summer 2018 series - and the shareholders are expecting results.</p>
-
-<p>(Of course Team Limilo had to purchase it&rsquo;s own Monsterborg for development and performance testing too)</p>
-
-<p align="center" width=100>
-  <img src="https://jolyonbrown.com/img/monsterborg.jpg" alt="Monsterborg">
-</p>
+<p>The next round is in a couple of weeks and it&rsquo;s back to the challenge / obstacle avoidance event. Hopefully it actually moves this time..</p>
 
       </article>
 
       <ul class="pager blog-pager">
         
         <li class="previous">
-          <a href="https://jolyonbrown.com/post/nethack64-part-1/" data-toggle="tooltip" data-placement="top" title="Nethack64 Part 1">&larr; Previous Post</a>
+          <a href="https://jolyonbrown.com/post/formula-pi/" data-toggle="tooltip" data-placement="top" title="Formula Pi">&larr; Previous Post</a>
         </li>
         
-        
-        <li class="next">
-          <a href="https://jolyonbrown.com/post/formula-pi-20180121/" data-toggle="tooltip" data-placement="top" title="Formula Pi Winter 2017/18 - Update">Next Post &rarr;</a>
-        </li>
         
       </ul>
 

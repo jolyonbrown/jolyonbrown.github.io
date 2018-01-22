@@ -8,8 +8,24 @@
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
-    <lastBuildDate>Wed, 17 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Formula Pi Winter 2017/18 - Update</title>
+      <link>https://jolyonbrown.com/post/formula-pi-20180121/</link>
+      <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
+      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      <guid>https://jolyonbrown.com/post/formula-pi-20180121/</guid>
+      <description>&lt;p&gt;After a miserable starting line failure for the first event proper of the Winter &lt;sup&gt;17&lt;/sup&gt;&amp;frasl;&lt;sub&gt;18&lt;/sub&gt; season, last week the Team Limilo robot finished a creditable third in it&amp;rsquo;s heat, clocking up 14 laps. I say creditable, because on the first corner it ended up in a crash (of it&amp;rsquo;s own making - the draw saw it placed on the outside lane and it tried to cut across to the inside) which saw it stranded up on the barrier while the frontrunners clocked up a few laps. Eventually it freed itself but spent the next minutes upside down (which due to the restricted camera view at that angle seems to cause all kinds of problems). To be honest, the car carried on causing problems for other competitors getting in the way, but at some point it got flipped back up the right way and started to get some clean laps in and looked pretty quick. I was quite proud of this moment here as it caught an overtook one of the leaders:&lt;/p&gt;
+
+&lt;p align=&#34;center&#34; width=100&gt;
+  &lt;img src=&#34;https://jolyonbrown.com/img/borgundertake.gif&#34; alt=&#34;Undertake&#34;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The next round is in a couple of weeks and it&amp;rsquo;s back to the challenge / obstacle avoidance event. Hopefully it actually moves this time..&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Formula Pi</title>
