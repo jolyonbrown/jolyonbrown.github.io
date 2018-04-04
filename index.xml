@@ -8,8 +8,28 @@
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
-    <lastBuildDate>Wed, 07 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Formula Pi Winter 2017/18 - Update 4</title>
+      <link>https://jolyonbrown.com/post/formula-pi-20180402/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      <guid>https://jolyonbrown.com/post/formula-pi-20180402/</guid>
+      <description>&lt;p&gt;The Winter 2017-18 season of Formula Pi is over! Unfortunately Limilo had no chance of making the final, but as per the previous post I had high hopes of getting a win in the final heat. After a great start (leading the first lap, slipping into second place after finally avoiding another car just after) the robot hit a car going the wrong way around the track. After getting out of that scrape, the robot decided the best course of action would be to beach itself on the racetrack wall:&lt;/p&gt;
+
+&lt;p align=&#34;center&#34; width=100&gt;
+  &lt;img src=&#34;https://jolyonbrown.com/img/limilofail.gif&#34; alt=&#34;Fail&#34;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;There it remained until the race was over, folornly rocking backwards and forwards in an attempt to get going again. Team Limilo ended up 16th for the season on 14 points. A bit disappointing but we&amp;rsquo;ll be back for the summer season with a bit of experience and hopefully no more bad luck!&lt;/p&gt;
+
+&lt;p&gt;The final was a bit of an odd affair, with almost all the competitors involved in huge smashes which saw a couple of reboots and one robot ending up beached on top of another one. This left lambda.p.racing, the previous seasons winners with a clearish run towards their second title.&lt;/p&gt;
+
+&lt;p&gt;Best of all though was a reveal of the new Raptor class of Formula Pi - much faster robots with onboard &lt;a href=&#34;https://www.pozyx.io&#34;&gt;Pozyx Tags&lt;/a&gt; - giving them motion sensors and indoor positioning. Can&amp;rsquo;t wait to get hold of one of these new models!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Formula Pi Winter 2017/18 - Update 3</title>
