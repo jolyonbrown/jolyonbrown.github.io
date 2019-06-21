@@ -2,14 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jolyon Brown</title>
-    <link>https://jolyonbrown.com/post/index.xml</link>
+    <link>https://jolyonbrown.com/post/</link>
     <description>Recent content in Posts on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
     <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
     <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jolyonbrown.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://jolyonbrown.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Formula Pi Winter 2017/18 - Update 4</title>
@@ -17,18 +19,7 @@
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/formula-pi-20180402/</guid>
-      <description>&lt;p&gt;The Winter 2017-18 season of Formula Pi is over! Unfortunately Limilo had no chance of making the final, but as per the previous post I had high hopes of getting a win in the final heat. After a great start (leading the first lap, slipping into second place after finally avoiding another car just after) the robot hit a car going the wrong way around the track. After getting out of that scrape, the robot decided the best course of action would be to beach itself on the racetrack wall:&lt;/p&gt;
-
-&lt;p align=&#34;center&#34; width=100&gt;
-  &lt;img src=&#34;https://jolyonbrown.com/img/limilofail.gif&#34; alt=&#34;Fail&#34;&gt;
-&lt;/p&gt;
-
-&lt;p&gt;There it remained until the race was over, folornly rocking backwards and forwards in an attempt to get going again. Team Limilo ended up 16th for the season on 14 points. A bit disappointing but we&amp;rsquo;ll be back for the summer season with a bit of experience and hopefully no more bad luck!&lt;/p&gt;
-
-&lt;p&gt;The final was a bit of an odd affair, with almost all the competitors involved in huge smashes which saw a couple of reboots and one robot ending up beached on top of another one. This left lambda.p.racing, the previous seasons winners with a clearish run towards their second title.&lt;/p&gt;
-
-&lt;p&gt;Best of all though was a reveal of the new Raptor class of Formula Pi - much faster robots with onboard &lt;a href=&#34;https://www.pozyx.io&#34;&gt;Pozyx Tags&lt;/a&gt; - giving them motion sensors and indoor positioning. Can&amp;rsquo;t wait to get hold of one of these new models!&lt;/p&gt;
-</description>
+      <description>The Winter 2017-18 season of Formula Pi is over! Unfortunately Limilo had no chance of making the final, but as per the previous post I had high hopes of getting a win in the final heat. After a great start (leading the first lap, slipping into second place after finally avoiding another car just after) the robot hit a car going the wrong way around the track. After getting out of that scrape, the robot decided the best course of action would be to beach itself on the racetrack wall:</description>
     </item>
     
     <item>
@@ -37,16 +28,8 @@
       <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/formula-pi-20180307/</guid>
-      <description>&lt;p&gt;So the last challenge round of the season didn&amp;rsquo;t quite go to plan - Team Limilo now sits back in 13th place, after yet another zero point haul from an obstacle avoidance based heat.&lt;/p&gt;
-
-&lt;p&gt;Simulation testing had gone pretty well, but this was a reminder that nothing can subtitute for running code in the real world. I&amp;rsquo;d taken a chance on reducing the threshold for triggering an overtake which didn&amp;rsquo;t pay off at all. The robot hit the first obstacle and took an age to finish it&amp;rsquo;s first lap. It&amp;rsquo;s opponent wasn&amp;rsquo;t uncatchable at that point, but on the second lap the robot hit yet another obstacle, this time triggering a complete reboot. Unfortunately this put it into &amp;lsquo;waiting for the start sequence mode&amp;rsquo; and that was the end of the race as far as Team Limilo were concerned.&lt;/p&gt;
-
-&lt;p&gt;So, a couple of takeaways from that. The boot sequence should really check for the existence of race logs, indicating that the race had already started (therefore bypassing the start sequence holding pattern). Secondly, just tweaking parameters for the avoidance code isn&amp;rsquo;t enough - there needs to be a whole rethink.&lt;/p&gt;
-
-&lt;p&gt;One last race remains. The top 5 final is now beyond reach, but a top 10 place would be a decent return for a first season I think, so testing is geared towards getting round as fast as possible. There&amp;rsquo;s also the lap record to aim for - an impressive 13 and a bit seconds. Claiming that would be a real prize.&lt;/p&gt;
-
-&lt;p&gt;The last challenge heat is available &lt;a href=&#34;https://youtu.be/4rOitCd_D3E?t=17m38s&#34;&gt;here&lt;/a&gt; on YouTube.&lt;/p&gt;
-</description>
+      <description>So the last challenge round of the season didn&amp;rsquo;t quite go to plan - Team Limilo now sits back in 13th place, after yet another zero point haul from an obstacle avoidance based heat.
+Simulation testing had gone pretty well, but this was a reminder that nothing can subtitute for running code in the real world. I&amp;rsquo;d taken a chance on reducing the threshold for triggering an overtake which didn&amp;rsquo;t pay off at all.</description>
     </item>
     
     <item>
@@ -55,16 +38,9 @@
       <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/formula-pi-20180226/</guid>
-      <description>&lt;p&gt;After the last couple of Formula Pi rounds Team Limilo sit in ninth position on the overall leaderboard.&lt;/p&gt;
-
-&lt;p&gt;The second challenge round was a disaster with zero points scored (the least said about that the better, but basically the robot managed to hit every obstacle on the track, ironically clearing a path for it&amp;rsquo;s competitor to sail round without a care in the world).&lt;/p&gt;
-
-&lt;p&gt;The second race though was a much better affair with the robot coming a close second in it&amp;rsquo;s heat with 29 laps completed - the joint highest of the round. It lead the race for long periods and was a bit unfortunate to spend a crucial section upside down (which still seems to cause problems). I suspect another lap might have seen it regain the lead from the eventual heat winner.&lt;/p&gt;
-
-&lt;p&gt;There are two rounds left before the final. Another challenge / obstacle avoidance head to head followed by another straight race. Only the top five teams get to race in the final event, so in order to have any chance of making it, maximum (or near maximum) points will be needed from both rounds. Avoidance has been a real weakness this season, but testing went reasonably well, so fingers crossed.&lt;/p&gt;
-
-&lt;p&gt;The race is available &lt;a href=&#34;https://youtu.be/JSEV4yqMSxg?t=18m44s&#34;&gt;here&lt;/a&gt; on YouTube.&lt;/p&gt;
-</description>
+      <description>After the last couple of Formula Pi rounds Team Limilo sit in ninth position on the overall leaderboard.
+The second challenge round was a disaster with zero points scored (the least said about that the better, but basically the robot managed to hit every obstacle on the track, ironically clearing a path for it&amp;rsquo;s competitor to sail round without a care in the world).
+The second race though was a much better affair with the robot coming a close second in it&amp;rsquo;s heat with 29 laps completed - the joint highest of the round.</description>
     </item>
     
     <item>
@@ -73,14 +49,7 @@
       <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/formula-pi-20180121/</guid>
-      <description>&lt;p&gt;After a miserable starting line failure for the first event proper of the Winter 2017-18 season, last week the Team Limilo robot finished a creditable third in it&amp;rsquo;s heat, clocking up 14 laps. I say &lt;em&gt;creditable&lt;/em&gt; because on the first corner it ended up in a crash (of it&amp;rsquo;s own making - the draw saw it placed on the outside lane and it tried to cut across to the inside without a care for who got in the way - oops) which saw it stranded up on the barrier while the frontrunners clocked up a few laps. Eventually it freed itself but spent several minutes upside down (the restricted camera view at that angle seems to cause all kinds of problems). To be honest, the car carried on being a nuisance for the other competitors, but at some point it got flipped back up the right way and started to get some clean laps in. It actually looked pretty quick. I was quite proud of this moment here as it caught and undertook one of the leaders:&lt;/p&gt;
-
-&lt;p align=&#34;center&#34; width=100&gt;
-  &lt;img src=&#34;https://jolyonbrown.com/img/borgundertake.gif&#34; alt=&#34;Undertake&#34;&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The next round is in a couple of weeks and its back to the challenge / obstacle avoidance event. Hopefully it actually moves this time..&lt;/p&gt;
-</description>
+      <description>After a miserable starting line failure for the first event proper of the Winter 2017-18 season, last week the Team Limilo robot finished a creditable third in it&amp;rsquo;s heat, clocking up 14 laps. I say creditable because on the first corner it ended up in a crash (of it&amp;rsquo;s own making - the draw saw it placed on the outside lane and it tried to cut across to the inside without a care for who got in the way - oops) which saw it stranded up on the barrier while the frontrunners clocked up a few laps.</description>
     </item>
     
     <item>
@@ -89,30 +58,7 @@
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/formula-pi/</guid>
-      <description>&lt;p&gt;Something else I&amp;rsquo;ve been looking at since late on in 2017 is &lt;a href=&#34;https://www.formulapi.com&#34;&gt;Formula Pi&lt;/a&gt;. I&amp;rsquo;ve been interested in machine learning/artificial intelligence for a while, so coming across a competition where you can program a Raspberry Pi based robot to race against competitors (and have the organisers handle literally everything else) was appealing right from the off. I managed to grab a slot for the winter season just before the closing date for entries. At the time of writing the event is just about to enter it&amp;rsquo;s second round of competition proper (there have been a few practice sessions).&lt;/p&gt;
-
-&lt;p&gt;After paying the entry fee (a modest £37), I was given access to the standard code for the robots (along with a branch containing the previous seasons winning effort). The robots this season are &lt;a href=&#34;https://www.piborg.org/robots/monsterborg&#34;&gt;MonsterBorgs&lt;/a&gt; - pretty robust bits of kit that use a &amp;ldquo;Thunderborg&amp;rdquo; motor controller (both sold by &lt;a href=&#34;https://www.piborg.org&#34;&gt;Piborg&lt;/a&gt; who also organise the competition). The &amp;lsquo;borgs have a &amp;lsquo;standard&amp;rsquo; Raspberry Pi camera on their front. No fancy LiDAR here! This is all computer vision based. All the cars are configured exactly the same way hardware wise and the organisers take care of installing the software on the robots locally and running the races, broadcasting them live on YouTube. They even have little overlays introducing each competitor!&lt;/p&gt;
-
-&lt;p align=&#34;center&#34; width=100&gt;
-  &lt;img src=&#34;https://jolyonbrown.com/img/formulapigraphic.png&#34; alt=&#34;Team Limilo&#34;&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The default code is all Python based and uses the modules you might expect when it comes to interpreting input from the camera (cv,numpy). The track as seen from the picture here is divided into different coloured lanes to aid the robot when it tries to identify where it is (and which direction it&amp;rsquo;s travelling in!). The base code does a great job of getting the robot around the track and avoiding obstacles (other robots), but in order to be competitive tweaks (or wholesale changes) are encouraged/necessary. The code package comes with a cool little track simulator which can feeds the running code generated images of the track (along with other cars). The competition website has a bunch of information on each bit of the code base and there is a friendly forum too.&lt;/p&gt;
-
-&lt;p align=&#34;center&#34; width=100&gt;
-  &lt;img src=&#34;https://jolyonbrown.com/img/formulapitrack.png&#34; alt=&#34;Formula Pi Track&#34;&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The whole thing is great fun. As this is Team Limilo&amp;rsquo;s (my companies name - hey, free publicity) first season I&amp;rsquo;d be ecstatic if I even get to be competitive before the end of it (the team has unfortunately suffered a couple of starting line failures already). There are a bunch of things to think about. I&amp;rsquo;ve decided to experiment first on making the platform that controls the car a bit quicker (switching to Cython from Python, bumping the OpenCV version etc) so that I can free up some resources for the model I&amp;rsquo;m attempting to create and train for better collision avoidance. I haven&amp;rsquo;t looked at the Thunderborg controller itself yet but will at some point - I&amp;rsquo;ve seen a couple of other competitors manage to pull off some tighter turns than the default code can manage and assume this is where they&amp;rsquo;ve spent some of their time.&lt;/p&gt;
-
-&lt;p&gt;This is a cool little entrypoint to autonomous vehicle development and robotics. I thoroughly recommend it. Having awakened my inner F1 team owner, Team Limilo has already signed up for the Summer 2018 series - and the shareholders are expecting results.&lt;/p&gt;
-
-&lt;p&gt;(Of course Team Limilo had to purchase it&amp;rsquo;s own Monsterborg for development and performance testing too)&lt;/p&gt;
-
-&lt;p align=&#34;center&#34; width=100&gt;
-  &lt;img src=&#34;https://jolyonbrown.com/img/monsterborg.jpg&#34; alt=&#34;Monsterborg&#34;&gt;
-&lt;/p&gt;
-</description>
+      <description>Something else I&amp;rsquo;ve been looking at since late on in 2017 is Formula Pi. I&amp;rsquo;ve been interested in machine learning/artificial intelligence for a while, so coming across a competition where you can program a Raspberry Pi based robot to race against competitors (and have the organisers handle literally everything else) was appealing right from the off. I managed to grab a slot for the winter season just before the closing date for entries.</description>
     </item>
     
     <item>
@@ -121,14 +67,7 @@
       <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/nethack64-part-1/</guid>
-      <description>&lt;p&gt;So far on this project I&amp;rsquo;ve done a bit of background reading and information gathering. &lt;a href=&#34;http://nethack.org&#34;&gt;Nethack.org&lt;/a&gt; is the first place to go for all things Nethack code related of course. One thing I spotted early on was the news that the current version - 3.6 - is relatively new and includes a lot of additional code and tidying up of the venerable 3.4 branches. The development team also took the decision to no longer worry about optimising for older, memory constrained platforms (which I guess includes the aforementioned Amiga). They do ask for anyone who manages to get 3.6 up and running on these sorts of systems to let them know how they get on. As I’m developing for a machine with memory constraints way beyond anything in the list of supported platforms I&amp;rsquo;ve made the decision to stick with the 3.4 branch. If I manage that, then perhaps I can re-use my knowledge to tackle the 3.6 branch. But I doubt that will happen.&lt;/p&gt;
-
-&lt;p&gt;I was also reminded that the game requires 80 columns. The C64 only had a 40x25 screen, but I recall many implementations of 80 columns from back in the day (when it was being pushed as a &amp;lsquo;proper&amp;rsquo; business friendly machine). A quick google brought me up some options for that on the code front, so that’s a tick in the box right from the start. I suppose I could try and adapt it to 40 columns though if I really get stuck.&lt;/p&gt;
-
-&lt;p&gt;Given that limited memory is going to be the killer obstacle here by my reckoning, I looked around for details of something I recall being done later on in the C64’s lifetime - using the floppy drive as a swapfile (essentially making more memory available). After a bit of hunting and with some help on the great &lt;a href=&#34;https://www.reddit.com/r/c64/&#34;&gt;/r/c64&lt;/a&gt; subreddit, I’ve a couple of avenues to investigate. GEOS did something along these lines, as did Infocom apparently. I also had a reminder that using the spare CPU in the 1541 might be worth looking into as well. One thing I do have to my advantage is that Nethack is turn based, so having to squeeze in a ton of processing every &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;60&lt;/sub&gt; of a second isn’t likely to be a problem for me. Dealing with the slow serial bus might be worth it for some extra cpu capacity.&lt;/p&gt;
-
-&lt;p&gt;I &lt;a href=&#34;http://nethack.org/v343/download-src.html&#34;&gt;downloaded&lt;/a&gt; version 3.4 of the Netback code (which unfortunately isn&amp;rsquo;t held on Github like the 3.6 branch) and found a ton of helpful README type notes in there, including some specific notes around porting. Excellent. Now to get familiar with how this game works..&lt;/p&gt;
-</description>
+      <description>So far on this project I&amp;rsquo;ve done a bit of background reading and information gathering. Nethack.org is the first place to go for all things Nethack code related of course. One thing I spotted early on was the news that the current version - 3.6 - is relatively new and includes a lot of additional code and tidying up of the venerable 3.4 branches. The development team also took the decision to no longer worry about optimising for older, memory constrained platforms (which I guess includes the aforementioned Amiga).</description>
     </item>
     
     <item>
@@ -137,26 +76,8 @@
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/converting-nethack-to-the-c64/</guid>
-      <description>&lt;p&gt;2018 has started off pretty well as far as time management goes. I&amp;rsquo;ve actually begun to make some progress on hitherto stalled projects which I&amp;rsquo;ll talk about in my next few posts. Its amazing the amount of time ditching idle browsing and keeping up with Twitter frees up.&lt;/p&gt;
-
-&lt;p&gt;Thanks to being born in the early seventies, my middle childhood and teenage years coincided with the eighties British computer revolution. I can’t emphasise enough the impact of this on me at the time. I lived and breathed these new machines. To cut a long story short, I ended up with a Commodore 64 and was completely obsessed with knowing everything about it. I owe my entire career to that time and to that machine in particular.&lt;/p&gt;
-
-&lt;p&gt;Fast forward 30-odd years (insert horrified emoji here) and I’m delighted that retro computing is undergoing somewhat of a renaissance, with the C64 in particular seeing a bunch of new games and demos being written for it. Some of the stuff getting posted to the &lt;a href=&#34;https://www.reddit.com/r/c64/&#34;&gt;/r/c64&lt;/a&gt; subreddit these days is quite amazing. I&amp;rsquo;ve been following development of &lt;a href=&#34;https://sarahjaneavory.wordpress.com/category/briley-witch-rpg/&#34;&gt;this RPG&lt;/a&gt; by Sarah Jane Avory with particular interest for example. New fanzines like &lt;a href=&#34;https://freeze64.com/&#34;&gt;Freeze64&lt;/a&gt; and the showcase of games on &lt;a href=&#34;https://itch.io/search?q=c64&#34;&gt;Itch.io&lt;/a&gt; show how much love there still is out there for the good old breadbin.&lt;/p&gt;
-
-&lt;p&gt;So a while back I pondered starting a project to contribute to this reawakened scene, without being quite sure what to do. Having seen just about every demo with a scroll text back in the day I didn’t think the world needed any more of those. There wasn&amp;rsquo;t a huge amount of spare time to create a game from scratch. What about, I wondered, doing a conversion? That would mean not having to figure out gameplay, and perhaps graphics and sound might be easier too. What game did the C64 miss out on, back then?&lt;/p&gt;
-
-&lt;p&gt;By coincidence I happened across a &lt;a href=&#34;https://www.reddit.com/r/gamedev/comments/5r4f2c/two_years_of_roguelike_development_faqs/&#34;&gt;list&lt;/a&gt; of ‘rogue like’ game development FAQs on Reddit which reminded me of &lt;a href=&#34;https://en.wikipedia.org/wiki/NetHack&#34;&gt;Nethack&lt;/a&gt;, the classic old text based game. I could port that. Perfect. The C64 was known for it’s PETSCII character set, so that hopefully bodes well. I don’t even remember it having any sound.. plus the code is open source!&lt;/p&gt;
-
-&lt;p&gt;Surely, I thought, this must have been done already? A good search around suggested it hadn’t (although there were some similar old games). I&amp;rsquo;m not underestimating the difficulty here though - the least powerful system I ever personally saw Nethack running on was an Amiga back in the day, which had way more resources than the C64 ever had.&lt;/p&gt;
-
-&lt;p&gt;So yes, I’m porting an old game to an old platform for the love and challenge of it.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve decided to set myself some limitations: I’m not expecting this done be done in a hurry. Likely I&amp;rsquo;ll only have a few hours a month to work on this. There’s no rush. No deadlines. I do want it to run on a stock C64 with disk drive if possible, so at least a few hours will be spent reviving my old setup, which is languishing in the garage at the moment.&lt;/p&gt;
-
-&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;https://jolyonbrown.com/img/Nethack_screenshot.png&#34; alt=&#34;Nethack screenshot&#34;&gt;
-&lt;/p&gt;
-</description>
+      <description>2018 has started off pretty well as far as time management goes. I&amp;rsquo;ve actually begun to make some progress on hitherto stalled projects which I&amp;rsquo;ll talk about in my next few posts. Its amazing the amount of time ditching idle browsing and keeping up with Twitter frees up.
+Thanks to being born in the early seventies, my middle childhood and teenage years coincided with the eighties British computer revolution. I can’t emphasise enough the impact of this on me at the time.</description>
     </item>
     
     <item>
@@ -165,12 +86,7 @@
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/a-dos-attack-on-your-free-will/</guid>
-      <description>&lt;p&gt;My sabbatical from social media (well, Twitter) has commenced but, as luck would have it, during my last few visits I actually found some interesting/useful information. The kind of thing I originally used the service for. This gave me pause for thought, but then I read an article on &lt;a href=&#34;http://nautil.us/issue/52/the-hive/modern-media-is-a-dos-attack-on-your-free-will&#34;&gt;Nautil.us&lt;/a&gt; which made my mind up. That&amp;rsquo;s definitely it now. There is obviously a certain danger of confirmation bias here on my part given that I was thinking along these lines anyway, but quotes and links to studies showing that &amp;ldquo;repeated distractions lower people’s effective IQ by up to 10 points&amp;rdquo; makes it easy to cement my decision.&lt;/p&gt;
-
-&lt;p&gt;If/when I do return it&amp;rsquo;ll have to be in a much reduced capacity. Probably a ground zero approach on people I follow, better use of lists and more automation. Maybe I&amp;rsquo;ll do a blog post on how I set it up. I think &lt;a href=&#34;http://morning.computer/2017/10/box-of-autumn&#34;&gt;Warren Ellis&lt;/a&gt; does something similar and is &lt;em&gt;hugely&lt;/em&gt; productive, so that&amp;rsquo;s something to aim for perhaps.&lt;/p&gt;
-
-&lt;p&gt;It might be my imagination, but I already I think I&amp;rsquo;m seeing a benefit from simply having more time to do things. Those &amp;ldquo;few&amp;rdquo; minutes distractedly scrolling through a Twitter feed certainly do add up. I&amp;rsquo;m disabling as many notifications as I can get away with too. I must have been crazy to allow Apple News to send notifications to my phone screen (with accompanying buzz). Why should I allow a media company to interrupt whatever I&amp;rsquo;m doing, just so they can get some advertising revenue?&lt;/p&gt;
-</description>
+      <description>My sabbatical from social media (well, Twitter) has commenced but, as luck would have it, during my last few visits I actually found some interesting/useful information. The kind of thing I originally used the service for. This gave me pause for thought, but then I read an article on Nautil.us which made my mind up. That&amp;rsquo;s definitely it now. There is obviously a certain danger of confirmation bias here on my part given that I was thinking along these lines anyway, but quotes and links to studies showing that &amp;ldquo;repeated distractions lower people’s effective IQ by up to 10 points&amp;rdquo; makes it easy to cement my decision.</description>
     </item>
     
     <item>
@@ -179,12 +95,7 @@
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/a-social-media-sabbatical/</guid>
-      <description>&lt;p&gt;Something I&amp;rsquo;ve really struggled with in the last few years is starting projects and never getting them finished. I&amp;rsquo;ve items on my personal development to do list which have been there for longer than I can remember. Courses (paid for, in some cases) sit half completed. Websites and apps gather dust in version controlled repos, never destined to see the light of day. This blog is a prime example. I avoid looking at the dozens of draft, never to be published posts that litter my source directories.&lt;/p&gt;
-
-&lt;p&gt;I now recognise that this is partly down to wasting the free time that I do have on activities that are ultimately worthless. For example, I find it shockingly easy to sink time into Twitter that could be spent doing something else. Worse still, I&amp;rsquo;ve started to get the creeping feeling that catching up with my Twitter feeds - time which I once thought of as being a useful investment, keeping up to date with both the state of the world and developments in my professional sphere - is detrimental to my (or anyone elses for that matter) cognitive health. I&amp;rsquo;ve begun to think of the pieces of information inhaled from Twitter on a daily basis as being a bit like the calories you get from alcohol. Ingesting them is pleasurable at the time, but ultimately they&amp;rsquo;re worthless in terms of nutrition and probably bad for you in the long run.&lt;/p&gt;
-
-&lt;p&gt;So I was very interested by one of the best audiobooks I&amp;rsquo;ve bought in the last twelve months: Cal Newport&amp;rsquo;s &lt;i&gt;Deep Work - Rules for focused success in a distracted world&lt;/i&gt;. In it, Newport describes &amp;ldquo;Deep Work&amp;rdquo; as being the ability to focus without distraction on cognitively demanding tasks. This is the kind of state I want to achieve in order to start completing some of the work I want to do. One of his recommendations for getting there is to quit or switch to the controlled use of social media. A bit like giving up beer and wine for a month (which I&amp;rsquo;ve started to do each January), I think the potential benefits make it worth trying; so I&amp;rsquo;m going cold turkey on Twitter until sometime in 2018, after which I&amp;rsquo;ll only use it in a controlled manner. The worst that can happen is I still don&amp;rsquo;t get this work done, but I miss out on some anger and stress around the state of UK politics/Brexit and Trump. Stuff I have no influence over anyway. I can live with that.&lt;/p&gt;
-</description>
+      <description>Something I&amp;rsquo;ve really struggled with in the last few years is starting projects and never getting them finished. I&amp;rsquo;ve items on my personal development to do list which have been there for longer than I can remember. Courses (paid for, in some cases) sit half completed. Websites and apps gather dust in version controlled repos, never destined to see the light of day. This blog is a prime example. I avoid looking at the dozens of draft, never to be published posts that litter my source directories.</description>
     </item>
     
     <item>
@@ -193,43 +104,7 @@
       <pubDate>Wed, 10 Sep 2014 10:54:24 +0200</pubDate>
       <author>jolyon@limilo.com (Jolyon Brown)</author>
       <guid>https://jolyonbrown.com/post/awk-set-filename-variable-by-field-contents/</guid>
-      <description>&lt;p&gt;I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy? There was a lot of other stuff in the file, the functions were of varying length and split over a number of lines and had a couple of differing closing parameters. Awk was obviously the go-to tool here, but the request had the added complication that each function had to be stored in a seperate output file, named after the function that was being extracted into it. While matching between two patterns is easy in awk, I had some struggle finding out how to dump lines into a file whose name was set by a variable which was in turn set by the contents of a field. Google failed me so I’ve posted this in the hope it helps some other poor soul and saves them the syntax errors I endured figuring it out.&lt;/p&gt;
-
-&lt;p&gt;A CREATE FUNCTION statement looked like this in the file in question:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;CREATE FUNCTION function_name(variable name type) RETURNS
-another_variable
-LANGUAGE plpgsql
-AS $$
-    DECLARE
-    ...
-    &amp;lt;Various SQL statements&amp;gt;
-    ...
-END;
-$$;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The $$; sequence was replaced by $_$ in other functions for some reason (personal preference of whoever wrote it I guess). The desired name for the output file would be ‘function_name’ in this example.&lt;/p&gt;
-
-&lt;p&gt;Here’s the (one liner of course) awk statement I ended up using (you may need to scroll to see the whole thing):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;awk -F&#39; |[(]&#39; &#39;/CREATE FUNCTION/ {p=1;name=$3}; p {print &amp;gt; name}; /\$\$;|\$_\$;/ {p=0;close(name)}; &#39; INPUT.sql
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A brief explanation. The parameters to the -F set the awk field delimiter to either (thanks to the | symbol) a space ’ ’ or open bracket &lt;a href=&#34;the square brackets being used to escape the regular one&#34;&gt;(&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The /CREATE FUNCTION/ is the first pattern to match against. When awk sees that, it sets variable p to 1, and sets the variable name to field 3 of that line, which in our case is the name of the function up to the (.&lt;/p&gt;
-
-&lt;p&gt;The p {print &amp;gt; name}; statement prints out lines if p equals 1 (the default action for awk). It also dumps any printed lines into a file, using the name variable as the filename. The position of the ‘p’ in the middle of this statement means that the whole desired range is printed, including the two patterns being matched against.&lt;/p&gt;
-
-&lt;p&gt;The (escaped) $$; sequence is an end pattern to match on, as is the alternative (signified by the | ) $_$; (also escaped). Once either of these is seen, awk sets p to zero, and closes the file. Failing to close the file results in an error relating to too many files being open.&lt;/p&gt;
-
-&lt;p&gt;The INPUT.sql is merely the file awk reads from.&lt;/p&gt;
-
-&lt;p&gt;The result – a long manual edit avoided and many small files, correctly named and containing the correct statements. Good old awk.&lt;/p&gt;
-
-&lt;p&gt;&lt;sup&gt;&lt;em&gt;Update (2017). I&amp;rsquo;ve moved this page from my old blog (the only surviving post!) as it occasionally gets hits for very obscure awk related searches. Hopefully has helped someone out in the last few years..&lt;/em&gt;&lt;/sup&gt;&lt;/p&gt;
-</description>
+      <description>I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy?</description>
     </item>
     
   </channel>
