@@ -6,8 +6,6 @@
     <description>Recent content in Pages on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
-    <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
     <lastBuildDate>Thu, 26 Jan 2017 10:54:24 +0200</lastBuildDate>
     
 	<atom:link href="https://jolyonbrown.com/page/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +15,7 @@
       <title>about</title>
       <link>https://jolyonbrown.com/page/about/</link>
       <pubDate>Thu, 26 Jan 2017 10:54:24 +0200</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/page/about/</guid>
       <description>I&amp;rsquo;ll fill this in eventually&amp;hellip; honest!</description>
     </item>

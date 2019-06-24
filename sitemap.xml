@@ -76,11 +76,6 @@
   </url>
   
   <url>
-    <loc>https://jolyonbrown.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://jolyonbrown.com/tags/</loc>
     <priority>0</priority>
   </url>

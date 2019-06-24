@@ -6,8 +6,6 @@
     <description>Recent content on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>jolyon@limilo.com (Jolyon Brown)</managingEditor>
-    <webMaster>jolyon@limilo.com (Jolyon Brown)</webMaster>
     <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +15,7 @@
       <title>Formula Pi Winter 2017/18 - Update 4</title>
       <link>https://jolyonbrown.com/post/formula-pi-20180402/</link>
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/formula-pi-20180402/</guid>
       <description>The Winter 2017-18 season of Formula Pi is over! Unfortunately Limilo had no chance of making the final, but as per the previous post I had high hopes of getting a win in the final heat. After a great start (leading the first lap, slipping into second place after finally avoiding another car just after) the robot hit a car going the wrong way around the track. After getting out of that scrape, the robot decided the best course of action would be to beach itself on the racetrack wall:</description>
     </item>
@@ -26,7 +24,7 @@
       <title>Formula Pi Winter 2017/18 - Update 3</title>
       <link>https://jolyonbrown.com/post/formula-pi-20180307/</link>
       <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/formula-pi-20180307/</guid>
       <description>So the last challenge round of the season didn&amp;rsquo;t quite go to plan - Team Limilo now sits back in 13th place, after yet another zero point haul from an obstacle avoidance based heat.
 Simulation testing had gone pretty well, but this was a reminder that nothing can subtitute for running code in the real world. I&amp;rsquo;d taken a chance on reducing the threshold for triggering an overtake which didn&amp;rsquo;t pay off at all.</description>
@@ -36,7 +34,7 @@ Simulation testing had gone pretty well, but this was a reminder that nothing ca
       <title>Formula Pi Winter 2017/18 - Update 2</title>
       <link>https://jolyonbrown.com/post/formula-pi-20180226/</link>
       <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/formula-pi-20180226/</guid>
       <description>After the last couple of Formula Pi rounds Team Limilo sit in ninth position on the overall leaderboard.
 The second challenge round was a disaster with zero points scored (the least said about that the better, but basically the robot managed to hit every obstacle on the track, ironically clearing a path for it&amp;rsquo;s competitor to sail round without a care in the world).
@@ -47,7 +45,7 @@ The second race though was a much better affair with the robot coming a close se
       <title>Formula Pi Winter 2017/18 - Update</title>
       <link>https://jolyonbrown.com/post/formula-pi-20180121/</link>
       <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/formula-pi-20180121/</guid>
       <description>After a miserable starting line failure for the first event proper of the Winter 2017-18 season, last week the Team Limilo robot finished a creditable third in it&amp;rsquo;s heat, clocking up 14 laps. I say creditable because on the first corner it ended up in a crash (of it&amp;rsquo;s own making - the draw saw it placed on the outside lane and it tried to cut across to the inside without a care for who got in the way - oops) which saw it stranded up on the barrier while the frontrunners clocked up a few laps.</description>
     </item>
@@ -56,7 +54,7 @@ The second race though was a much better affair with the robot coming a close se
       <title>Formula Pi</title>
       <link>https://jolyonbrown.com/post/formula-pi/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/formula-pi/</guid>
       <description>Something else I&amp;rsquo;ve been looking at since late on in 2017 is Formula Pi. I&amp;rsquo;ve been interested in machine learning/artificial intelligence for a while, so coming across a competition where you can program a Raspberry Pi based robot to race against competitors (and have the organisers handle literally everything else) was appealing right from the off. I managed to grab a slot for the winter season just before the closing date for entries.</description>
     </item>
@@ -65,7 +63,7 @@ The second race though was a much better affair with the robot coming a close se
       <title>Nethack64 Part 1</title>
       <link>https://jolyonbrown.com/post/nethack64-part-1/</link>
       <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/nethack64-part-1/</guid>
       <description>So far on this project I&amp;rsquo;ve done a bit of background reading and information gathering. Nethack.org is the first place to go for all things Nethack code related of course. One thing I spotted early on was the news that the current version - 3.6 - is relatively new and includes a lot of additional code and tidying up of the venerable 3.4 branches. The development team also took the decision to no longer worry about optimising for older, memory constrained platforms (which I guess includes the aforementioned Amiga).</description>
     </item>
@@ -74,7 +72,7 @@ The second race though was a much better affair with the robot coming a close se
       <title>Converting Nethack to the C64</title>
       <link>https://jolyonbrown.com/post/converting-nethack-to-the-c64/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/converting-nethack-to-the-c64/</guid>
       <description>2018 has started off pretty well as far as time management goes. I&amp;rsquo;ve actually begun to make some progress on hitherto stalled projects which I&amp;rsquo;ll talk about in my next few posts. Its amazing the amount of time ditching idle browsing and keeping up with Twitter frees up.
 Thanks to being born in the early seventies, my middle childhood and teenage years coincided with the eighties British computer revolution. I can’t emphasise enough the impact of this on me at the time.</description>
@@ -84,7 +82,7 @@ Thanks to being born in the early seventies, my middle childhood and teenage yea
       <title>A DoS attack on your free will</title>
       <link>https://jolyonbrown.com/post/a-dos-attack-on-your-free-will/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/a-dos-attack-on-your-free-will/</guid>
       <description>My sabbatical from social media (well, Twitter) has commenced but, as luck would have it, during my last few visits I actually found some interesting/useful information. The kind of thing I originally used the service for. This gave me pause for thought, but then I read an article on Nautil.us which made my mind up. That&amp;rsquo;s definitely it now. There is obviously a certain danger of confirmation bias here on my part given that I was thinking along these lines anyway, but quotes and links to studies showing that &amp;ldquo;repeated distractions lower people’s effective IQ by up to 10 points&amp;rdquo; makes it easy to cement my decision.</description>
     </item>
@@ -93,7 +91,7 @@ Thanks to being born in the early seventies, my middle childhood and teenage yea
       <title>A social media sabbatical</title>
       <link>https://jolyonbrown.com/post/a-social-media-sabbatical/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/a-social-media-sabbatical/</guid>
       <description>Something I&amp;rsquo;ve really struggled with in the last few years is starting projects and never getting them finished. I&amp;rsquo;ve items on my personal development to do list which have been there for longer than I can remember. Courses (paid for, in some cases) sit half completed. Websites and apps gather dust in version controlled repos, never destined to see the light of day. This blog is a prime example. I avoid looking at the dozens of draft, never to be published posts that litter my source directories.</description>
     </item>
@@ -102,7 +100,7 @@ Thanks to being born in the early seventies, my middle childhood and teenage yea
       <title>about</title>
       <link>https://jolyonbrown.com/page/about/</link>
       <pubDate>Thu, 26 Jan 2017 10:54:24 +0200</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/page/about/</guid>
       <description>I&amp;rsquo;ll fill this in eventually&amp;hellip; honest!</description>
     </item>
@@ -111,7 +109,7 @@ Thanks to being born in the early seventies, my middle childhood and teenage yea
       <title>Awk: Set Output Filename Variable via Field Contents</title>
       <link>https://jolyonbrown.com/post/awk-set-filename-variable-by-field-contents/</link>
       <pubDate>Wed, 10 Sep 2014 10:54:24 +0200</pubDate>
-      <author>jolyon@limilo.com (Jolyon Brown)</author>
+      
       <guid>https://jolyonbrown.com/post/awk-set-filename-variable-by-field-contents/</guid>
       <description>I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy?</description>
     </item>
