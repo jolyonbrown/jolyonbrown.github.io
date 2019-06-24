@@ -1,130 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Awk: Set Output Filename Variable via Field Contents - Jolyon Brown</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Awk: Set Output Filename Variable via Field Contents" />
+<meta property="og:description" content="I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jolyonbrown.com/post/awk-set-filename-variable-by-field-contents/" />
+<meta property="article:published_time" content="2014-09-10T10:54:24&#43;02:00"/>
+<meta property="article:modified_time" content="2014-09-10T10:54:24&#43;02:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Awk: Set Output Filename Variable via Field Contents"/>
+<meta name="twitter:description" content="I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy?"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
 
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <title>Awk: Set Output Filename Variable via Field Contents</title>
-
-  <meta name="author" content="" />
-  
-  
-
-  <meta name="generator" content="Hugo 0.55.6" />
-
-  <link rel="alternate" href="https://jolyonbrown.com/index.xml" type="application/rss+xml" title="Jolyon Brown">
-
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://jolyonbrown.com/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://jolyonbrown.com/css/main.css" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-  <link rel="stylesheet" href="https://jolyonbrown.com/css/pygment_highlights.css" />
-  
-  
-  <meta property="og:title" content="Awk: Set Output Filename Variable via Field Contents" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="/post/awk-set-filename-variable-by-field-contents//" />
-  <meta property="og:image" content="" />
-
-  <script src="//load.sumome.com/" data-sumo-site-id="4af41100d66c8400ba126e006ba91100136040008d2ab300bada1b00bd22ef00" async="async"></script>
-  
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="/js/main.js"></script>
 </head>
 
-
-  <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://jolyonbrown.com/">Jolyon Brown</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      
-        
-          <li>
-          <a title="Home" href="/">Home</a>
-  	      </li>
-  	    
-      
-        
-          <li>
-          <a title="All posts" href="/posts">All posts</a>
-  	      </li>
-  	    
-      
-        
-          <li>
-          <a title="About" href="/page/about">About</a>
-  	      </li>
-  	    
-      
-        
-          <li>
-          <a title="Tags" href="/tags">Tags</a>
-  	      </li>
-  	    
-      
-      </ul>
-    </div>
-
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-      
-	  </div>
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Jolyon Brown</h1>
+	<div class="site-description"><h2></h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/jolyonbrown" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/Eddie_Catflap" title="Twitter"><i data-feather="twitter"></i></a></ul>
+		</nav>
 	</div>
 
-  </div>
-</nav>
-
-
-    <div role="main" class="container main-content">
-
-      
-        
-
-
-
-
-
-<header class="header-section ">
-
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-heading">
-          <h1>Awk: Set Output Filename Variable via Field Contents</h1>
-      
-      
-      
-      <span class="post-meta">Posted on September 10, 2014</span>
-      
-        </div>
-      </div>
-    </div>
-  </div>
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/page/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
 </div>
-</header>
 
 
+		<div class="post-header">
+			<h1 class="title">Awk: Set Output Filename Variable via Field Contents</h1>
+			<div class="meta">Posted at &mdash; Sep 10, 2014</div>
+		</div>
 
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-          <p>I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy? There was a lot of other stuff in the file, the functions were of varying length and split over a number of lines and had a couple of differing closing parameters. Awk was obviously the go-to tool here, but the request had the added complication that each function had to be stored in a seperate output file, named after the function that was being extracted into it. While matching between two patterns is easy in awk, I had some struggle finding out how to dump lines into a file whose name was set by a variable which was in turn set by the contents of a field. Google failed me so I’ve posted this in the hope it helps some other poor soul and saves them the syntax errors I endured figuring it out.</p>
+		<div class="markdown">
+			<p>I suspect the title of this post would win a prize for the worst on the internet. Oh well. On a new contract at the moment working with people from various backgrounds in IT. One of my new co-workers had a text file containing a dump of a postgres database and wanted to extract all the CREATE FUNCTION statements out of it for analysis; could I take a look as resident Linux guy? There was a lot of other stuff in the file, the functions were of varying length and split over a number of lines and had a couple of differing closing parameters. Awk was obviously the go-to tool here, but the request had the added complication that each function had to be stored in a seperate output file, named after the function that was being extracted into it. While matching between two patterns is easy in awk, I had some struggle finding out how to dump lines into a file whose name was set by a variable which was in turn set by the contents of a field. Google failed me so I’ve posted this in the hope it helps some other poor soul and saves them the syntax errors I endured figuring it out.</p>
 
 <p>A CREATE FUNCTION statement looked like this in the file in question:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">CREATE FUNCTION function_name(variable name type) RETURNS
@@ -155,76 +88,30 @@ $$;</pre></div>
 
 <p><sup><em>Update (2017). I&rsquo;ve moved this page from my old blog (the only surviving post!) as it occasionally gets hits for very obscure awk related searches. Hopefully has helped someone out in the last few years..</em></sup></p>
 
-      </article>
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
 
-      <ul class="pager blog-pager">
-        
-        
-        <li class="next">
-          <a href="https://jolyonbrown.com/post/a-social-media-sabbatical/" data-toggle="tooltip" data-placement="top" title="A social media sabbatical">Next Post &rarr;</a>
-        </li>
-        
-      </ul>
-
-      
-
-    </div>
-  </div>
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = '';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
 </div>
 
-      
-
-    </div>
-
-    <footer>
-  <div class="container beautiful-jekyll-footer">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="list-inline text-center footer-links">
-          
-          
-		      
-		      
-		      
-	    	  
-          
-          
-
-    		  <li>
-      			<a href="https://jolyonbrown.com/index.xml" title="RSS">
-      			  <span class="fa-stack fa-lg">
-        				<i class="fa fa-circle fa-stack-2x"></i>
-        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-      			  </span>
-      			</a>
-    		  </li>		
-
-        </ul>
-        <p class="copyright text-muted">
-    		  
-    		  &nbsp;&bull;&nbsp;
-    		  2018
-    		  
-    		  
-    		  &nbsp;&bull;&nbsp;
-    		  <a href="https://jolyonbrown.com/">Jolyon Brown</a>
-    		  
-  	    </p>
-  	        
-    		<p class="theme-by text-muted">
-    		  Theme by
-    		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-    		</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="https://jolyonbrown.com/js/jquery-1.11.2.min.js"></script>
-<script src="https://jolyonbrown.com/js/bootstrap.min.js"></script>
-<script src="https://jolyonbrown.com/js/main.js"></script>
-
-
-
-  </body>
+<script>feather.replace()</script>
+</body>
 </html>
