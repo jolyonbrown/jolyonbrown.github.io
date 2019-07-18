@@ -6,10 +6,19 @@
     <description>Recent content on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to get screenshots in the Sway Window Manager</title>
+      <link>https://jolyonbrown.com/post/sway-screenshots/</link>
+      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jolyonbrown.com/post/sway-screenshots/</guid>
+      <description>I recently began a slow migration from using a 2014 Macbook Pro to a new 2019 Dell XPS 13. There&amp;rsquo;s probably another post there but basically, overdue a replacement, didn&amp;rsquo;t fancy the new keyboards and wanted to switch back to using Linux 100% of the time. Of course Apple then announced new keyboards on their latest model. D&amp;rsquo;oh! But I&amp;rsquo;m happy with the XPS so far, running Ubuntu. I also wanted to switch to a tiling window manager, and chose Sway (I wanted to run Wayland) as I had some experience with i3.</description>
+    </item>
     
     <item>
       <title>Formula Pi Winter 2017/18 - Update 4</title>
