@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> C64 - Installing Vice on Ubuntu &middot; Jolyon Brown </title>
+
+
+<link rel="stylesheet" href="https://jolyonbrown.com/css/slim.css">
+<link rel="stylesheet" href="https://jolyonbrown.com/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Jolyon Brown" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="https://jolyonbrown.com/">Jolyon Brown</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+
+      <li><a href="https://github.com/jolyonbrown">Github</a></li> 
+      <li><a href="https://twitter.com/Eddie_Catflap">Twitter</a></li> 
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="posts">
+        <div class="post">
+          <h2 class="post-title"><a href="https://jolyonbrown.com/post/vice-on-ubuntu/">C64 - Installing Vice on Ubuntu</a></h2>
+          <span class="post-date">Aug 27, 2019 </span>
+          <div class="post-content">
+            <p>I&rsquo;ve picked my C64 Nethack project back up again after switching back to Linux as my day to day desktop. And hey, August is <a href="https://twitter.com/c64month?lang=en">C64 month</a>! I&rsquo;m slowly getting my development setup sorted out, but the first step was to get VICE up and running. It&rsquo;s pretty simple, but took me half an hour to get the info together, so hopefully these steps save someone else a bit of time (and this blog is mainly to jog my memory anyway).</p>
+
+<p>Install VICE via apt-get:</p>
+
+<p>$ sudo apt-get install vice</p>
+
+<p>This doesn&rsquo;t install the kernal and other files needed to get a C64 up and running (try running the command <i>x64sc</i> to see the errors). These are included with the source for VICE though and easy to get. I downloaded the source from <i><a href="http://www.zimmers.net/anonftp/pub/cbm/crossplatform/emulators/VICE/">http://www.zimmers.net/anonftp/pub/cbm/crossplatform/emulators/VICE/</a></i> and copied the files to the right locations as follows:</p>
+
+<p>$ wget <a href="http://www.zimmers.net/anonftp/pub/cbm/crossplatform/emulators/VICE/vice-3.3.tar.gz">http://www.zimmers.net/anonftp/pub/cbm/crossplatform/emulators/VICE/vice-3.3.tar.gz</a>
+$ tar -zxvf vice-3.3.tar.gz
+$ cd vice-3.3/data
+$ sudo cp chargen kernal basic /usr/lib/vice/C64
+$ sudo cp d1541II d1571cr dos* /usr/lib/vice/DRIVES/</p>
+
+<p>Now, running x64sc brings up the old familiar screen - ah, the memories..!</p>
+
+<p align="center" width=100>
+  <img src="https://jolyonbrown.com/img/c64.png" alt="c64 screen">
+</p>
+
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="btn previous " href="https://jolyonbrown.com/post/sway-screenshots/"> Prev</a>  
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="https://jolyonbrown.com/js/slim.js"></script>
+  <script src="https://jolyonbrown.com/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+</body>
+
+</html>

@@ -6,10 +6,19 @@
     <description>Recent content on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jolyonbrown.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C64 - Installing Vice on Ubuntu</title>
+      <link>https://jolyonbrown.com/post/vice-on-ubuntu/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jolyonbrown.com/post/vice-on-ubuntu/</guid>
+      <description>I&amp;rsquo;ve picked my C64 Nethack project back up again after switching back to Linux as my day to day desktop. And hey, August is C64 month! I&amp;rsquo;m slowly getting my development setup sorted out, but the first step was to get VICE up and running. It&amp;rsquo;s pretty simple, but took me half an hour to get the info together, so hopefully these steps save someone else a bit of time (and this blog is mainly to jog my memory anyway).</description>
+    </item>
     
     <item>
       <title>How to get screenshots in the Sway Window Manager</title>
