@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Jolyon Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jolyonbrown.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An experiment with 30 minute sprints</title>
+      <link>https://jolyonbrown.com/post/20-min-sprints/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jolyonbrown.com/post/20-min-sprints/</guid>
+      <description>There&amp;rsquo;s some advice I&amp;rsquo;ve read which says to become successful you should really work on what&amp;rsquo;s important and just write off the stuff that you&amp;rsquo;ll never get to. Paraphrasing wildly of course, but while I recognise that&amp;rsquo;s probably the right way to go about things, this hasn&amp;rsquo;t stopped me from getting annoyed at those dangling threads of things that never get finished.
+So sod the advice. For a bit anyway. Given the current circumstances in our household where it&amp;rsquo;s looking like we&amp;rsquo;re shielding until the end of June, that gives me some time to experiment with trying to tie off some of these projects.</description>
+    </item>
     
     <item>
       <title>C64 - Installing Vice on Ubuntu</title>
