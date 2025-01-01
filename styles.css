@@ -73,19 +73,13 @@ main {
   flex: 1;
 }
 
-h2 {
-  color: #444;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
-}
-
 ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -95,6 +89,26 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Post summary styling */
+.post-summary {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd; /* Dividing line under title and date */
+}
+
+.post-summary h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #222;
+}
+
+.post-date {
+  margin: 5px 0 0;
+  font-size: 1em;
+  color: #666;
+  font-style: italic;
 }
 
 /* Responsive Design */
