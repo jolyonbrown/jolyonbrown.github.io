@@ -1,0 +1,38 @@
+baseURL = "https://jolyonbrown.com/"
+languageCode = "en-gb"
+title = ".plan"
+theme = "PaperMod"
+
+[params]
+  description = "AI experiments, hardware projects, and things I found interesting enough to write down"
+  author = "Jolyon Brown"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = ".plan"
+    Content = "AI experiments, hardware projects, and things I found interesting enough to write down"
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/jolyonbrown"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
