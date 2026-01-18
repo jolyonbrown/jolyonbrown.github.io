@@ -26,6 +26,11 @@ theme = "PaperMod"
 
 [menu]
   [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv/"
+    weight = 5
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"

@@ -1,0 +1,45 @@
+<style>
+/* Home page CTA buttons */
+.home-cta {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.home-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.home-cta-btn.primary {
+    background: #10b981;
+    color: #000;
+}
+
+.home-cta-btn.primary:hover {
+    background: #0ea572;
+    transform: translateY(-1px);
+}
+
+.home-cta-btn.secondary {
+    background: var(--tertiary);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.home-cta-btn.secondary:hover {
+    border-color: var(--primary);
+}
+
+/* Reduce top padding on home */
+.home-info {
+    margin-top: 0;
+}
+</style>

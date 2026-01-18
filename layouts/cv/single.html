@@ -1,0 +1,256 @@
+{{ define "main" }}
+<div class="cv-page">
+  <!-- Hero Section -->
+  <section class="cv-hero">
+    <div class="cv-status">
+      <span class="status-dot"></span>
+      Open to Platform/ML Infrastructure roles
+    </div>
+    <h1 class="cv-name">Jolyon Brown</h1>
+    <h2 class="cv-title">Platform Engineer</h2>
+    <p class="cv-tagline">Production infrastructure, critical systems, and thirty years of keeping things running</p>
+
+    <div class="cv-tags">
+      <span class="cv-tag">NHS England</span>
+      <span class="cv-tag">TSYS</span>
+      <span class="cv-tag">HBOS</span>
+      <span class="cv-tag">Linux Format</span>
+    </div>
+
+    <div class="cv-hero-actions">
+      <button class="cv-btn cv-btn-primary" onclick="toggleChat()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        Ask AI About Me
+        <span class="cv-badge">New</span>
+      </button>
+    </div>
+
+    <div class="cv-scroll-hint">
+      <span>SCROLL TO EXPLORE</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="cv-section" id="experience">
+    <p class="cv-section-intro">Each role includes queryable AI context—the real story behind the bullet points.</p>
+
+    <div class="cv-experience-card">
+      <div class="cv-exp-header">
+        <div>
+          <h3 class="cv-exp-company">NHS England</h3>
+          <p class="cv-exp-title">Platform Engineer — National Healthcare Identity Infrastructure</p>
+        </div>
+        <span class="cv-exp-dates">2014–Present</span>
+      </div>
+      <ul class="cv-exp-bullets">
+        <li>Production operations and incident response across AWS and Azure for national critical infrastructure</li>
+        <li>Python API development for healthcare worker data systems serving hundreds of millions of daily transactions</li>
+        <li>24/7 on-call for systems where downtime is a national news story</li>
+      </ul>
+      <button class="cv-context-toggle" data-role="nhs">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        View AI Context
+      </button>
+      <div class="cv-context-panel" id="context-nhs"></div>
+    </div>
+
+    <div class="cv-experience-card">
+      <div class="cv-exp-header">
+        <div>
+          <h3 class="cv-exp-company">TSYS</h3>
+          <p class="cv-exp-title">Unix Team Lead → Infrastructure Designer</p>
+        </div>
+        <span class="cv-exp-dates">2008–2014</span>
+      </div>
+      <ul class="cv-exp-bullets">
+        <li>Led team supporting global payment platforms (Linux, AIX, Oracle) processing billions in transactions</li>
+        <li>Designed and deployed FICO anti-fraud platform in Brazil for major financial institution</li>
+        <li>24x7x365 global on-call rotation, high-profile launches including O2 payment card</li>
+      </ul>
+      <button class="cv-context-toggle" data-role="tsys">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        View AI Context
+      </button>
+      <div class="cv-context-panel" id="context-tsys"></div>
+    </div>
+
+    <div class="cv-experience-card">
+      <div class="cv-exp-header">
+        <div>
+          <h3 class="cv-exp-company">HBOS</h3>
+          <p class="cv-exp-title">Senior Technical Infrastructure Developer</p>
+        </div>
+        <span class="cv-exp-dates">1999–2008</span>
+      </div>
+      <ul class="cv-exp-bullets">
+        <li>Led Intelligent Finance platform migration to HP Superdomes with full site resilience</li>
+        <li>Built esure insurance platform with automatic failover via dark fibre</li>
+        <li>Started as junior admin, left as the person they called when things got complicated</li>
+      </ul>
+      <button class="cv-context-toggle" data-role="hbos">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        View AI Context
+      </button>
+      <div class="cv-context-panel" id="context-hbos"></div>
+    </div>
+
+    <div class="cv-experience-card">
+      <div class="cv-exp-header">
+        <div>
+          <h3 class="cv-exp-company">Linux Format Magazine</h3>
+          <p class="cv-exp-title">"Administeria" Column — Technical Writer</p>
+        </div>
+        <span class="cv-exp-dates">2014–2017</span>
+      </div>
+      <ul class="cv-exp-bullets">
+        <li>Monthly sysadmin column for UK's bestselling Linux magazine</li>
+        <li>Kubernetes coverage in 2015 (one year after K8s release), Prometheus in 2016</li>
+        <li>Docker tutorials during early adoption, plus ELK Stack, AWS/Ansible, OpenStack, Ceph</li>
+      </ul>
+      <button class="cv-context-toggle" data-role="linuxformat">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        View AI Context
+      </button>
+      <div class="cv-context-panel" id="context-linuxformat"></div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="cv-section" id="skills">
+    <h2 class="cv-section-title">Skills Assessment</h2>
+
+    <div class="cv-skills-grid">
+      <div class="cv-skills-col cv-skills-strong">
+        <h3>STRONG</h3>
+        <ul>
+          <li><span class="skill-icon">✓</span> Production Infrastructure & Operations</li>
+          <li><span class="skill-icon">✓</span> AWS / Azure / Terraform</li>
+          <li><span class="skill-icon">✓</span> Kubernetes / Docker / ECS</li>
+          <li><span class="skill-icon">✓</span> Python (APIs, automation, tooling)</li>
+          <li><span class="skill-icon">✓</span> CI/CD & GitOps</li>
+          <li><span class="skill-icon">✓</span> Observability (Splunk, Prometheus, ELK)</li>
+          <li><span class="skill-icon">✓</span> Incident Response & On-Call</li>
+          <li><span class="skill-icon">✓</span> Technical Writing</li>
+        </ul>
+      </div>
+
+      <div class="cv-skills-col cv-skills-moderate">
+        <h3>MODERATE</h3>
+        <ul>
+          <li><span class="skill-icon">○</span> Databases (operational, not DBA)</li>
+          <li><span class="skill-icon">○</span> Chef / Ansible</li>
+          <li><span class="skill-icon">○</span> ML/AI Engineering (actively learning)</li>
+        </ul>
+      </div>
+
+      <div class="cv-skills-col cv-skills-gaps">
+        <h3>GAPS (I'LL TELL YOU)</h3>
+        <ul>
+          <li><span class="skill-icon">✗</span> Frontend Development</li>
+          <li><span class="skill-icon">✗</span> Traditional Enterprise Unix (Oracle/AIX)</li>
+          <li><span class="skill-icon">✗</span> Java Development</li>
+          <li><span class="skill-icon">✗</span> Rust / Zig (hobbyist interest)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fit Check Section -->
+  <section class="cv-section" id="fit-check">
+    <h2 class="cv-section-title">Honest Fit Assessment</h2>
+    <p class="cv-section-intro">Paste a job description and I'll give you an honest assessment of whether I'm the right fit.</p>
+
+    <div class="cv-fit-tabs">
+      <button class="cv-fit-tab active" data-tab="check">Check Your Role</button>
+      <button class="cv-fit-tab" data-tab="strong">Strong Fit Example</button>
+      <button class="cv-fit-tab" data-tab="weak">Weak Fit Example</button>
+    </div>
+
+    <div class="cv-fit-panel" id="panel-check">
+      <div class="cv-fit-input-area">
+        <label for="job-description">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          Job description to analyze
+        </label>
+        <textarea id="job-description" placeholder="Paste the job description here..."></textarea>
+        <button class="cv-btn cv-btn-primary" id="analyze-fit">Analyze Fit</button>
+      </div>
+      <div class="cv-fit-result" id="fit-result"></div>
+    </div>
+
+    <div class="cv-fit-panel hidden" id="panel-strong">
+      <div class="cv-fit-example">
+        <p class="cv-fit-jd"><strong>Example:</strong> Senior Platform Engineer at a healthtech startup - AWS, Kubernetes, on-call experience required, Python preferred.</p>
+        <div class="cv-fit-assessment cv-fit-strong-match">
+          <h4>✓ Strong Match — Let's Talk</h4>
+          <p>This aligns well with my background. Ten years on NHS critical infrastructure, deep AWS/K8s experience, comfortable with on-call, and I use Python daily.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-fit-panel hidden" id="panel-weak">
+      <div class="cv-fit-example">
+        <p class="cv-fit-jd"><strong>Example:</strong> Head of Product, Consumer Mobile App - deep mobile experience, growth/experimentation background required.</p>
+        <div class="cv-fit-assessment cv-fit-weak-match">
+          <h4>⚠ Probably Not Your Person</h4>
+          <p>My entire career has been B2B infrastructure. I understand consumer patterns intellectually but haven't shipped consumer products. The API architecture work transfers, but growth/experimentation is not my wheelhouse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="cv-section cv-contact">
+    <h2 class="cv-section-title">Get In Touch</h2>
+    <div class="cv-contact-links">
+      <a href="mailto:jolyon@limilo.com" class="cv-contact-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        jolyon@limilo.com
+      </a>
+      <a href="https://linkedin.com/in/jolyon-brown" class="cv-contact-link" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/jolyonbrown" class="cv-contact-link" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+        GitHub
+      </a>
+      <a href="/" class="cv-contact-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+          <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+          <path d="M2 2l7.586 7.586"></path>
+          <circle cx="11" cy="11" r="2"></circle>
+        </svg>
+        Blog
+      </a>
+    </div>
+  </section>
+</div>
+
+<link rel="stylesheet" href="/css/cv.css">
+<script src="/js/cv.js" defer></script>
+{{ end }}
