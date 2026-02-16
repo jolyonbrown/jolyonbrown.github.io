@@ -9,6 +9,8 @@ cover:
 draft: false
 ---
 
+*The following piece was submitted to The Spectator, January 2026*
+
 The feeling of renewal that comes with New Year often dissipates as the return to work hoves into view. January blues set in. This time around, though, I've been unable to shake an ennui not brought on by middle age, my daughter heading back to university, or even signing into Teams.
 
 No, this malaise was brought on by using a specialist tool for programming provided by Anthropic (they of the 'Claude' series of large language models and an OpenAI competitor). Their 'Claude Code' software is like having an expert sat at your desk, hands on your keyboard. It can see your files, read your error messages, make changes, run them, see what breaks, fix it, and iterate - all without you playing messenger. It's a key tool in what's been dubbed 'vibe coding'. You describe in English what you want to happen; it does it, in your actual environment, handling the how and showing you the result. Run several at once and you have a team of 'agents' - the term of art - each tackling a different problem.
