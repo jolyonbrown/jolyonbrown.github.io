@@ -5,13 +5,13 @@ slug: "1-engineer-1-month-1-million-lines-of-code"
 cover:
   image: "/images/screenshot-2025-12-23_17-45-24-1-1.png"
   alt: "A screenshot of a LinkedIn job advertisement aiming to eliminate C code in windows using AI"
-  caption: ""
+  caption: "The Gibson may have had a fancy keyboard but pair programming with Mr The Plague left a lot to be desired"
 draft: false
 ---
 
 I saw quite a lot of comment on this job advertisement on LinkedIn by Galen Hunt, who is a distinguished engineer at Microsoft.
 
-![A screenshot of a LinkedIn job advertisement aiming to eliminate C code in windows using AI](/images/image-1-1-1.png "1 million lines? Surely not everyone said")
+{{< figure src="/images/image-1-1-1.png" alt="A screenshot of a LinkedIn job advertisement aiming to eliminate C code in windows using AI" caption="1 million lines? Surely not everyone said" >}}
 
 There was widespread derision on Twitter/X in response to this which I think is a bit unfair. Quite a lot of it seemed to be about the use of Rust (which seems to relate to some cultural issues I don't care about in this context). Yet more of it was about the wisdom of replacing 'battle hardened' code with 'AI generated slop' which I thought was a bit of a basic take. Yes, we all know that history is full of disasters when it comes to upgrades, replacements and rewrites. Yes, we all know that it's possible to generate bad code using these tools. This might well end up being scrapped for all kinds of reasons, but that's Microsoft's issue.
 
