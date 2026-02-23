@@ -6,6 +6,7 @@ cover:
   image: "/images/Screenshot-from-2025-09-05-19-38-04.png"
   alt: "LLMs and me cover image"
   caption: "Weyland-Yutani may not have cared about the crew, but the Nostromo included a great keyboard"
+tags: ["ai"]
 draft: false
 ---
 

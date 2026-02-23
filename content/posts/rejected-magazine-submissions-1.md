@@ -6,6 +6,7 @@ cover:
   image: "/images/vintagetypewriter.jpg"
   alt: "A vintage typewriter"
   caption: "The rejection letters were at least beautifully typed"
+tags: ["ai", "writing"]
 draft: false
 ---
 

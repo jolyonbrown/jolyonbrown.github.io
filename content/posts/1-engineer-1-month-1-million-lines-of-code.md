@@ -6,6 +6,7 @@ cover:
   image: "/images/screenshot-2025-12-23_17-45-24-1-1.png"
   alt: "A screenshot of a LinkedIn job advertisement aiming to eliminate C code in windows using AI"
   caption: "The Gibson may have had a fancy keyboard but pair programming with Mr The Plague left a lot to be desired"
+tags: ["ai", "software"]
 draft: false
 ---
 

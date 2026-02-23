@@ -6,6 +6,7 @@ cover:
   image: "/images/Screenshot-from-2025-11-28-22-43-48.png"
   alt: "Hardware hankerings cover image"
   caption: "Great film, but that keyboard sucked"
+tags: ["hardware"]
 draft: false
 ---
 

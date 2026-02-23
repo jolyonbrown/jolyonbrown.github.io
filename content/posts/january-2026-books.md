@@ -6,6 +6,7 @@ cover:
   image: "/images/douglas-adams-mac.png"
   alt: "Douglas Adams with his 1984 Macintosh"
   caption: "Couldn't find a novel with a computer keyboard on the cover, so here's Douglas Adams's Macintosh instead"
+tags: ["books"]
 draft: false
 ---
 *Experimenting with making notes about books I read during the year. Fiction/Non-Fiction anyway, technical books may or may not make the list*

@@ -6,6 +6,7 @@ cover:
   image: "/images/corsairgalleon.png"
   alt: "The Corsair Galleon 100 keyboard"
   caption: "The new Corsair Galleon 100 looks like it might be an awesome vibecoding keyboard"
+tags: ["ai", "software"]
 draft: false
 ---
 
