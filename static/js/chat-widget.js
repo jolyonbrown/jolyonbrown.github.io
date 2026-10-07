@@ -29,7 +29,7 @@
         <div id="chat-suggestions">
           <button class="suggestion">What's your background?</button>
           <button class="suggestion">Tell me about NHS work</button>
-          <button class="suggestion">Why ML infrastructure?</button>
+          <button class="suggestion">What agentic AI work have you done?</button>
           <button class="suggestion">What are your gaps?</button>
         </div>
         <div id="chat-input-area">

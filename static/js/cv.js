@@ -5,8 +5,9 @@
 
   // Context prompts for each role
   const CONTEXT_PROMPTS = {
+    enablis: "Give me the detailed STAR-format story behind Jolyon's work on Enablis's Fusion agentic AI platform. What did he build with MCP, AWS Bedrock AgentCore and the authentication layer, and how did he use Claude Code and Codex?",
     nhs: "Give me the detailed STAR-format story behind Jolyon's NHS England work. What was the situation, what tasks did he handle, what actions did he take, and what were the results? Be specific about the scale and impact.",
-    tsys: "Give me the detailed STAR-format story behind Jolyon's TSYS work. Include specifics about the payment processing infrastructure, the Brazil deployment, and key achievements.",
+    tsys: "Give me the detailed STAR-format story behind Jolyon's TSYS work. Include specifics about the payment processing infrastructure, the FICO anti-fraud platform design, and key achievements.",
     hbos: "Give me the detailed STAR-format story behind Jolyon's HBOS work. How did he progress from junior admin to senior developer? What were the key projects like Intelligent Finance and esure?",
     linuxformat: "Tell me about Jolyon's technical writing for Linux Format magazine. What made his coverage of Kubernetes, Prometheus, and Docker notable? What was the impact of covering these technologies early?"
   };
