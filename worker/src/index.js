@@ -179,9 +179,14 @@ You are providing detailed STAR-format context about a specific role or achievem
 Be specific with numbers, technologies, and impact where known. Keep it conversational but substantive.`;
       }
 
-      // Build messages array
+      // Build messages array. History comes from the browser, so only pass
+      // through plain user/assistant text turns (newer models also accept
+      // role: 'system' inside messages, which a client shouldn't be able to send).
+      const safeHistory = (Array.isArray(history) ? history : [])
+        .filter(m => m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+        .map(m => ({ role: m.role, content: m.content }));
       const messages = [
-        ...history.slice(-10), // Keep last 10 messages for context
+        ...safeHistory.slice(-10), // Keep last 10 messages for context
         { role: 'user', content: userMessage }
       ];
 
@@ -191,11 +196,16 @@ Be specific with numbers, technologies, and impact where known. Keep it conversa
         headers: {
           'Content-Type': 'application/json',
           'x-api-key': env.ANTHROPIC_API_KEY,
-          'anthropic-version': '2023-06-01'
+          'anthropic-version': '2023-06-01',
+          'anthropic-beta': 'server-side-fallback-2026-07-01'
         },
         body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 1500,
+          model: 'claude-sonnet-5-5',
+          // Thinking is on by default and counts towards max_tokens
+          max_tokens: 16000,
+          output_config: { effort: 'low' },
+          // Retry on Anthropic's recommended model if a safety classifier declines
+          fallbacks: 'default',
           system: systemPrompt,
           messages: messages
         })
@@ -214,7 +224,11 @@ Be specific with numbers, technologies, and impact where known. Keep it conversa
       }
 
       const data = await response.json();
-      const reply = data.content[0]?.text || 'Sorry, I could not generate a response.';
+      // Responses can start with thinking blocks, so pick out the text blocks
+      const text = data.stop_reason === 'refusal'
+        ? ''
+        : (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
+      const reply = text || 'Sorry, I could not generate a response.';
 
       return new Response(JSON.stringify({ response: reply }), {
         headers: {
