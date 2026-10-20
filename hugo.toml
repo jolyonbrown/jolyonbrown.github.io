@@ -1,43 +1,84 @@
 baseURL = "https://jolyonbrown.com/"
 languageCode = "en-gb"
 title = ".plan"
-theme = "PaperMod"
+enableRobotsTXT = true
 
 [params]
   description = "AI experiments, hardware projects, and things I found interesting enough to write down"
   author = "Jolyon Brown"
-  defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = false
-  ShowCodeCopyButtons = true
+  login = "jolyon"
+  github = "https://github.com/jolyonbrown"
+  linkedin = "https://www.linkedin.com/in/jolyon-brown"
+  email = "jolyon@limilo.com"
+  # The CV MCP server (see mcp/). Change this if you put it on mcp.jolyonbrown.com.
+  mcpEndpoint = "https://jolyon-mcp.jolyon-ea8.workers.dev/mcp"
 
-  [params.homeInfoParams]
-    Title = ".plan"
-    Content = "AI experiments, hardware projects, and things I found interesting enough to write down"
-
-  [params.cover]
-    hidden = false
-    hiddenInList = false
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/jolyonbrown"
-
-[menu]
-  [[menu.main]]
-    identifier = "cv"
-    name = "CV"
-    url = "/cv/"
-    weight = 5
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+[menus]
+  [[menus.main]]
+    name = "writing"
+    pageRef = "/posts"
     weight = 10
+  [[menus.main]]
+    name = "projects"
+    pageRef = "/projects"
+    weight = 20
+  [[menus.main]]
+    name = "cv"
+    pageRef = "/cv"
+    weight = 30
+  [[menus.main]]
+    name = "about"
+    pageRef = "/about"
+    weight = 40
+
+[mediaTypes]
+  [mediaTypes."text/x-plan"]
+    suffixes = ["plan"]
+
+[outputFormats]
+  # /.plan - for `curl jolyonbrown.com/.plan`
+  [outputFormats.dotplan]
+    mediaType = "text/x-plan"
+    baseName = ""
+    isPlainText = true
+    notAlternative = true
+  # /plan.txt - same thing, but browsers display it rather than download it
+  [outputFormats.plan]
+    mediaType = "text/plain"
+    baseName = "plan"
+    isPlainText = true
+    notAlternative = true
+  # /llms.txt - a map of the site for AI tools
+  [outputFormats.llms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+  # /site.json - CV, projects and posts as data; the MCP server reads this
+  [outputFormats.sitejson]
+    mediaType = "application/json"
+    baseName = "site"
+    isPlainText = true
+    notAlternative = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "dotplan", "plan", "llms", "sitejson"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML", "RSS"]
+
+[taxonomies]
+  tag = "tags"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[markup.highlight]
+  noClasses = true
+  style = "monokai"
+
+[services.rss]
+  limit = 20
+
+[sitemap]
+  changefreq = "monthly"

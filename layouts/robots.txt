@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+# A map of this site for AI tools: {{ "llms.txt" | absURL }}

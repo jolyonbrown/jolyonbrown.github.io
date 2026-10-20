@@ -1,0 +1,54 @@
+# The workshop. Status is one of: idea, building, shipped, ongoing, abandoned.
+# Abandoned projects are welcome - they make the list honest.
+
+- name: MCP server for this site
+  status: shipped
+  year: 2026
+  summary: >-
+    Replaced the AI chatbot on my CV with a read-only MCP server. Point your own agent at it and
+    ask whatever you like - it reads the same data as this site, costs me nothing to run, and
+    there's nothing to jailbreak.
+  links:
+    - title: How to connect
+      url: /cv/#ask-your-agent
+
+- name: .plan
+  status: ongoing
+  year: 2025
+  summary: >-
+    This site. Moved off Ghost onto Hugo and GitHub Pages, then rebuilt around the idea of a Unix
+    .plan file. Try `curl jolyonbrown.com/.plan`.
+  links:
+    - title: Source
+      url: https://github.com/jolyonbrown/jolyonbrown.github.io
+
+- name: Custom trackball
+  status: idea
+  year: 2025
+  summary: >-
+    My thumb has had enough of the MX Ergo. Plan is to try a few DIY kits (Ploopy Adept, Nano 2,
+    efog Endgame) and then design my own from the ground up.
+  links:
+    - title: Hardware hankerings
+      url: /posts/hardware-hankerings/
+
+- name: presidencyprogress bot
+  status: shipped
+  year: 2025
+  summary: >-
+    A silly little Bluesky bot, written in a language I wanted to learn. One of the backlog
+    projects that only exists because LLMs removed the initial friction.
+  links:
+    - title: Bluesky
+      url: https://bsky.app/profile/presidencyprogress.bsky.social
+    - title: LLMs and me
+      url: /posts/llms-and-me/
+
+- name: Reading notes
+  status: ongoing
+  year: 2026
+  summary: >-
+    Short notes on the books I read through the year. Technical books may or may not make the list.
+  links:
+    - title: January 2026
+      url: /posts/january-2026-books/

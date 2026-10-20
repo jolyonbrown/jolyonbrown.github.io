@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="finger">
+  <h1 class="prompt"><span class="ps1" aria-hidden="true">$</span> cat {{ "this-page" }}</h1>
+  <div class="terminal">
+    <pre class="plan-text">cat: this-page: No such file or directory</pre>
+  </div>
+  <p class="more"><a href="{{ "/" | relURL }}">cd ~</a> &middot; <a href="{{ "/posts/" | relURL }}">ls posts/</a></p>
+</section>
+{{ end }}

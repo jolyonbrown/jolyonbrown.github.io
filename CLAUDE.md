@@ -1,4 +1,20 @@
-# CLAUDE.md - Ghost to Hugo Migration for jolyonbrown.com
+# CLAUDE.md - jolyonbrown.com
+
+## Current site (October 2026 redesign)
+
+The Ghost migration below is done. The site has since moved off PaperMod onto a small custom theme in `layouts/` - there is no theme submodule any more, so ignore the PaperMod steps in the original spec.
+
+- **Default branch is `master`.** `.github/workflows/hugo.yml` deploys on push to `master` with Hugo 0.147.0 extended; test builds with that version.
+- **Edit content, not templates:**
+  - `content/_index.md` - the homepage .plan (bump `planUpdated` when editing)
+  - `data/cv.yaml` - the CV (drives `/cv/`, `/llms.txt`, `/site.json` and the MCP server). Public - no phone number.
+  - `data/projects.yaml`, `data/administeria.yaml` - projects page and Linux Format column list
+  - `content/posts/` - posts, keeping the front matter format below
+- **Extra outputs from the home page:** `/.plan` and `/plan.txt` (`layouts/index.dotplan.plan` and `layouts/index.plan.txt` - keep them in sync), `/llms.txt`, `/site.json`. `/.plan` relies on `upload-pages-artifact@v3` including dotfiles; v4 drops them unless `include-hidden-files` is set.
+- **Styles and JS:** `assets/css/site.css` (light/dark/phosphor tokens on `:root`) and `assets/js/site.js` (theme toggle, the "green" easter egg, copy buttons), fingerprinted through Hugo Pipes.
+- **`mcp/`** - read-only MCP server (Cloudflare Worker) that serves `site.json` to visitors' AI clients. It replaced the old public chatbot (`worker/`, removed). Deployed by hand with `npm run deploy`; see `mcp/README.md`.
+
+## Original migration spec
 
 ## Project Overview
 

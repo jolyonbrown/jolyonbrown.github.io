@@ -1,0 +1,11 @@
+name = "jolyon-mcp"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+# Serves https://jolyon-mcp.<your-subdomain>.workers.dev/mcp by default.
+# If jolyonbrown.com's DNS is on Cloudflare you can use a nicer address instead -
+# uncomment this, then update params.mcpEndpoint in ../hugo.toml to match.
+# routes = [{ pattern = "mcp.jolyonbrown.com", custom_domain = true }]
+
+[vars]
+SITE_DATA_URL = "https://jolyonbrown.com/site.json"

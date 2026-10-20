@@ -1,0 +1,23 @@
+<section class="mcp-callout" id="ask-your-agent" aria-labelledby="mcp-title">
+  <h2 id="mcp-title">Ask your own agent about me</h2>
+  <p>There's no chatbot here. Instead there's a read-only <a href="https://modelcontextprotocol.io">MCP</a> server with my CV, projects and writing. Connect your own Claude, Codex or other MCP client and ask it whatever you like - including whether I'm a fit for your role. It'll tell you the gaps too.</p>
+  <div class="code-row">
+    <code class="copyable">{{ site.Params.mcpEndpoint }}</code>
+    <button class="copy-btn" type="button" data-copy="{{ site.Params.mcpEndpoint }}">copy</button>
+  </div>
+  <details>
+    <summary>Setup snippets</summary>
+    <p>Claude Code:</p>
+    <div class="code-row">
+      <code class="copyable">claude mcp add --transport http jolyon {{ site.Params.mcpEndpoint }}</code>
+      <button class="copy-btn" type="button" data-copy="claude mcp add --transport http jolyon {{ site.Params.mcpEndpoint }}">copy</button>
+    </div>
+    <p>Most other clients take a JSON config like this:</p>
+    <pre><code>{
+  "mcpServers": {
+    "jolyon": { "type": "http", "url": "{{ site.Params.mcpEndpoint }}" }
+  }
+}</code></pre>
+    <p>Not using MCP? The same data is at <a href="{{ "site.json" | relURL }}">/site.json</a>, and there's a summary for AI tools at <a href="{{ "llms.txt" | relURL }}">/llms.txt</a>.</p>
+  </details>
+</section>
