@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $title := cond .IsHome (printf "%s - %s" site.Title site.Params.author) (printf "%s | %s" .Title site.Title) }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+<meta name="author" content="{{ site.Params.author }}">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{- else }}
+<link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ site.Title }}">
+{{- end }}
+<link rel="alternate" type="text/plain" href="{{ "llms.txt" | absURL }}" title="llms.txt">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230c0d0c'/%3E%3Ctext x='5' y='23' font-family='monospace' font-size='18' fill='%233ddc97'%3E~/%3C/text%3E%3C/svg%3E">
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{- /* Set the saved theme before first paint so there's no flash. */}}
+<script>
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "light" || t === "dark" || t === "phosphor") document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+{{ $css := resources.Get "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">

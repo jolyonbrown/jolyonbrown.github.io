@@ -1,0 +1,182 @@
+# Single source of truth for the CV.
+# Drives /cv/, /llms.txt, /site.json and (via site.json) the MCP server.
+# Don't put the phone number here - everything in this file is public.
+
+profile:
+  name: Jolyon Brown
+  headline: Forward Deployed Engineer
+  status: Open to Forward Deployed Engineering & Agentic AI roles
+  tagline: Thirty years of production operations, now building agentic AI that ships.
+  summary:
+    - >-
+      An engineer with a DevOps background and thirty years of production operations experience
+      across banking, healthcare, and payment systems. A natural tinkerer, I stay close to the
+      leading edge of AI tooling - constantly trying new things out, building prototypes, and
+      turning experiments into things that ship.
+    - >-
+      My career has spanned every scale, from founding my own consultancy to national critical
+      infrastructure at NHS England, HBOS, and TSYS. I've led Unix teams and designed anti-fraud
+      and payment architectures, but most of it has come down to the same thing: being dropped
+      into something unfamiliar and making it work.
+    - >-
+      Most recently I've been a consulting engineer on Fusion (Enablis's agentic AI orchestration
+      platform, built on AWS Bedrock AgentCore), where I built out the platform's MCP integration
+      layers, and Tech Lead of a team building the next generation of healthcare worker APIs.
+    - >-
+      Much of my career has been in security-critical, regulated environments: secure banking
+      infrastructure, PCI-compliant payment design, and identity and access management at NHS England.
+  contact:
+    email: jolyon@limilo.com
+    linkedin: https://www.linkedin.com/in/jolyon-brown
+    github: https://github.com/jolyonbrown
+    website: https://jolyonbrown.com
+
+experience:
+  - org: Enablis
+    role: Consulting Engineer, Fusion
+    dates: 2026 - Present
+    via: Limilo Ltd
+    summary: >-
+      Augmented a small team building Fusion, Enablis's agentic AI orchestration platform,
+      implementing the AgentCore-based system using Claude Code and Codex.
+    highlights:
+      - Built the platform's MCP integration layers, connecting Fusion to codebases, project management tools (Jira, Linear, GitHub Issues) and other MCP-compatible services
+      - Implemented agent workflows on AWS Bedrock AgentCore with human-in-the-loop approval gates - the controlled, auditable execution that production and regulated environments need
+      - Built out the platform's authentication (Google and Microsoft OAuth sign-in), strengthening access control for enterprise deployment
+    tech: [AWS Bedrock AgentCore, MCP, OAuth, Claude Code, Codex]
+
+  - org: NHS England (formerly NHS Digital)
+    role: Platform Engineer & Tech Lead
+    dates: 2014 - Present
+    via: Infinity Works (2014-2020), Mastek (2020-2022), BJSS/CGI (2022-present)
+    summary: >-
+      Senior platform engineer on national healthcare identity and access management
+      infrastructure. Ten years on the same critical system through three different consultancies.
+      Started with on-premise Linux, Ansible and Microsoft SCVMM, migrated to AWS in 2021, and now
+      work on both the AWS production system and its Azure-based replacement.
+    highlights:
+      - Tech Lead of a team building the next generation of healthcare worker APIs
+      - Production operations and incident response for an identity and access management system that serves the entire NHS and cannot go down
+      - 24/7 on-call, working across both infrastructure and application layers at national scale
+    tech: [AWS (EC2, ECS, RDS, API Gateway, Elasticache), Azure, Linux, Python, Ansible, Kubernetes, HAProxy, LDAP]
+
+  - org: Limilo Ltd
+    role: Founder & Director
+    dates: Sept 2011 - Present
+    summary: >-
+      My consultancy, providing platform engineering and agentic AI development to clients
+      across healthcare and finance.
+    highlights:
+      - "Filter Integrity Limited (2020-present): infrastructure and web hosting support"
+      - "Evince Technology (2019-2023): production support for critical Linux systems"
+      - "Cendyn/RoundTableHQ (2014-2020): data centre migrations, AWS infrastructure, Chef automation, MySQL admin, PCI compliance, Ruby on Rails platform support"
+      - "Future Publishing (2014-2017): technical author of Linux Format magazine's monthly Administeria column"
+
+  - org: TSYS
+    role: Senior Server Technician → Unix Team Leader → Infrastructure Solutions Designer
+    dates: Sept 2008 - May 2014
+    location: Knaresborough
+    summary: >-
+      Payment processing infrastructure in a heavily regulated financial services environment.
+      Progressed from Senior Server Technician to Team Lead to Infrastructure Designer over nearly six years.
+    highlights:
+      - "Infrastructure Solutions Designer (2012-2014): technical solutions and infrastructure design for client projects. Led design of the FICO anti-fraud platform, deployed in Brazil. Internal presentations on DevOps and OpenStack"
+      - "Unix Team Leader (2010-2012): led the Unix team supporting global payment processing (Linux, AIX, Oracle) - production support, code releases, PCI audit compliance, capacity planning, 24x7x365 on-call with customers across multiple continents"
+      - "Senior Server Technician (2008-2010): prepaid card payment processing platform (Linux/JBoss/DB2). Involved in the O2 payment card launch"
+      - "Certifications: ITIL Service Management, Project Management, Systems Design"
+
+  - org: HBOS
+    role: Senior Technical Infrastructure Developer
+    dates: Sept 1999 - Sept 2008
+    location: Leeds
+    summary: >-
+      Nine years on the Unix technical support team providing 24x7 third-level support for banking
+      infrastructure. Joined as a junior administrator, left as a senior technical expert - the
+      person they called when things got complicated.
+    highlights:
+      - Led migration of the Intelligent Finance platform from Sun E10K to HP Superdomes with HA clustering and full site resilience (2008)
+      - Implemented the esure insurance platform with automatic failover using dark fibre between data centres
+      - Consolidated Oracle Financials onto POWER 5/AIX infrastructure
+      - Built secure e-commerce infrastructure for multiple hosted brands
+      - Apache/SSL, WebLogic and high-availability architecture
+
+  - org: Century Inns PLC
+    role: IT Manager
+    dates: Aug 1995 - Aug 1999
+    summary: >-
+      Joined as part of a graduate work programme to help implement new accounting systems.
+      Became IT Manager with three direct reports. Implemented electronic invoicing (EDI) and led
+      a £1M+ EPOS rollout to the company's pubs and hotels.
+
+skills:
+  - area: Agentic AI
+    items: [AWS Bedrock AgentCore, MCP (server & integration design), Claude Code, Codex, Agentic workflow design]
+  - area: Cloud & Infrastructure
+    items: [AWS, Azure, Terraform, HA architecture]
+  - area: Security & Compliance
+    items: [Identity & access management (LDAP), PCI-DSS audit compliance, Anti-fraud platform design, Secure infrastructure]
+  - area: DevOps & Automation
+    items: [Ansible, Chef, CI/CD, GitOps, Infrastructure as Code]
+  - area: Containers & Orchestration
+    items: [Docker, Kubernetes, ECS]
+  - area: Observability
+    items: [Splunk, Prometheus, Performance analysis, Incident investigation]
+  - area: Development
+    items: [Python, Bash, Git/GitHub]
+  - area: Systems
+    items: [Linux, HAProxy, MySQL, PostgreSQL, HA clustering, 24/7 production support]
+
+self_assessment:
+  strong:
+    - Agentic AI (Bedrock AgentCore, MCP, Claude Code, Codex)
+    - Production infrastructure & operations
+    - AWS / Azure / Terraform
+    - Kubernetes / Docker / ECS
+    - Python (APIs, automation, tooling)
+    - CI/CD & GitOps
+    - Security & compliance (IAM/LDAP, PCI-DSS)
+    - Incident response & on-call
+    - Technical writing
+  moderate:
+    - Databases (operational, not a DBA)
+    - Chef / Ansible
+    - ML model development (I work on the infrastructure and applied agents, not training models)
+  gaps:
+    - Frontend development - haven't done it professionally
+    - Traditional enterprise Unix (Oracle, AIX, WebLogic) - knew it well once, rusty now
+    - Java - can read it, wouldn't claim to write production Java
+    - Rust / Zig - hobbyist interest only
+    - Consumer and mobile products - my whole career has been B2B and infrastructure
+
+fit_examples:
+  - verdict: strong
+    heading: Strong match - this is the job I'm doing now
+    role: Forward Deployed Engineer at an AI platform company, embedded with enterprise customers in regulated industries, building agent and MCP integrations.
+    assessment: >-
+      I've built MCP integration layers and AgentCore workflows with human-in-the-loop approval
+      gates on Fusion, and I've spent thirty years being dropped into unfamiliar, regulated
+      environments - banking, payments, the NHS - and making things work.
+  - verdict: strong
+    heading: Strong match - let's talk
+    role: Senior Platform Engineer at a healthtech company. AWS, Kubernetes, on-call experience required, Python preferred.
+    assessment: >-
+      Ten years on NHS critical infrastructure, deep AWS and Kubernetes experience, comfortable
+      with on-call, and I use Python daily.
+  - verdict: weak
+    heading: Probably not your person
+    role: Head of Product, consumer mobile app. Deep mobile experience and a growth/experimentation background required.
+    assessment: >-
+      My entire career has been B2B infrastructure. I understand consumer patterns intellectually
+      but haven't shipped consumer products. The API architecture work transfers; growth and
+      experimentation isn't my wheelhouse.
+
+publications:
+  - title: Linux Format magazine - "Administeria" column
+    dates: 2014 - 2017
+    url: /administeria/
+    summary: Monthly sysadmin column for the UK's best-selling Linux magazine.
+
+education:
+  - qualification: BSc Computer Science
+    institution: University of Liverpool
+    dates: 1991 - 1994

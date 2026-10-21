@@ -1,0 +1,21 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="page-desc">{{ .Content }}</div>
+</header>
+<ul class="project-list">
+  {{- range site.Data.projects }}
+  <li class="project">
+    <div class="project-head">
+      <h2 class="project-name">{{ .name }}</h2>
+      <span class="status status-{{ .status }}">{{ .status }}</span>
+    </div>
+    <p class="project-summary">{{ .summary | markdownify }}</p>
+    <p class="project-links">
+      <span class="project-year">{{ .year }}</span>
+      {{- range .links }} <a href="{{ .url }}">{{ .title }}</a>{{ end }}
+    </p>
+  </li>
+  {{- end }}
+</ul>
+{{ end }}
