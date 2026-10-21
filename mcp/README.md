@@ -14,6 +14,10 @@ The transport is stateless Streamable HTTP at `POST /mcp`, answered with plain J
 
 ## Deploy
 
+GitHub Actions deploys it (`.github/workflows/mcp.yml`) whenever `mcp/` changes on `master`. It runs the smoke test first. The workflow needs a `CLOUDFLARE_API_TOKEN` repository secret, created from Cloudflare's "Edit Cloudflare Workers" token template. `CLOUDFLARE_ACCOUNT_ID` is optional. You can also run the workflow by hand from the Actions tab.
+
+To deploy from your own machine instead:
+
 ```sh
 cd mcp
 npm install
@@ -21,7 +25,7 @@ npx wrangler login     # first time only
 npm run deploy
 ```
 
-That gives you `https://jolyon-mcp.<your-subdomain>.workers.dev/mcp`. If it's not `jolyon-ea8`, update `params.mcpEndpoint` in `../hugo.toml`.
+Either way you get `https://jolyon-mcp.<your-subdomain>.workers.dev/mcp`. If it's not `jolyon-ea8`, update `params.mcpEndpoint` in `../hugo.toml`.
 
 For `mcp.jolyonbrown.com` instead, the domain's DNS has to be on Cloudflare. Uncomment `routes` in `wrangler.toml`, deploy, and update `params.mcpEndpoint`.
 

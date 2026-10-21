@@ -12,7 +12,7 @@ The Ghost migration below is done. The site has since moved off PaperMod onto a 
   - `content/posts/` - posts, keeping the front matter format below
 - **Extra outputs from the home page:** `/.plan` and `/plan.txt` (`layouts/index.dotplan.plan` and `layouts/index.plan.txt` - keep them in sync), `/llms.txt`, `/site.json`. `/.plan` relies on `upload-pages-artifact@v3` including dotfiles; v4 drops them unless `include-hidden-files` is set.
 - **Styles and JS:** `assets/css/site.css` (light/dark/phosphor tokens on `:root`) and `assets/js/site.js` (theme toggle, the "green" easter egg, copy buttons), fingerprinted through Hugo Pipes.
-- **`mcp/`** - read-only MCP server (Cloudflare Worker) that serves `site.json` to visitors' AI clients. It replaced the old public chatbot (`worker/`, removed). Deployed by hand with `npm run deploy`; see `mcp/README.md`.
+- **`mcp/`** - read-only MCP server (Cloudflare Worker) that serves `site.json` to visitors' AI clients. It replaced the old public chatbot (`worker/`, removed). Deployed by `.github/workflows/mcp.yml` when `mcp/` changes (needs the `CLOUDFLARE_API_TOKEN` repo secret); see `mcp/README.md`.
 
 ## Original migration spec
 
