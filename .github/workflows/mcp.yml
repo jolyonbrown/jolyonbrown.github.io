@@ -10,11 +10,6 @@ on:
     branches: ["master"]
     paths: ["mcp/**", ".github/workflows/mcp.yml"]
   workflow_dispatch:
-    inputs:
-      retire_chat_worker:
-        description: "Also delete the old jolyon-cv-chat chatbot worker (one-off)"
-        type: boolean
-        default: false
 
 permissions:
   contents: read
@@ -67,8 +62,3 @@ jobs:
         run: |
           [ -n "$CLOUDFLARE_ACCOUNT_ID" ] || unset CLOUDFLARE_ACCOUNT_ID
           npx wrangler deploy
-      - name: Retire the old chatbot worker
-        if: ${{ inputs.retire_chat_worker }}
-        run: |
-          [ -n "$CLOUDFLARE_ACCOUNT_ID" ] || unset CLOUDFLARE_ACCOUNT_ID
-          npx wrangler delete --name jolyon-cv-chat
