@@ -17,7 +17,7 @@
   year: 2025
   summary: >-
     This site. Moved off Ghost onto Hugo and GitHub Pages, then rebuilt around the idea of a Unix
-    .plan file. Try `curl jolyonbrown.com/.plan`.
+    .plan file. Try `curl -L jolyonbrown.com/.plan`.
   links:
     - title: Source
       url: https://github.com/jolyonbrown/jolyonbrown.github.io

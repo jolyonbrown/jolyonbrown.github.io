@@ -36,7 +36,7 @@ enableRobotsTXT = true
     suffixes = ["plan"]
 
 [outputFormats]
-  # /.plan - for `curl jolyonbrown.com/.plan`
+  # /.plan - for `curl -L jolyonbrown.com/.plan`
   [outputFormats.dotplan]
     mediaType = "text/x-plan"
     baseName = ""
