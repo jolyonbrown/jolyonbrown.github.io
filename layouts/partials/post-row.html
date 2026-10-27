@@ -1,0 +1,13 @@
+<li class="post-row">
+  <a class="post-row-link" href="{{ .RelPermalink }}">
+    {{- with .Params.cover.image }}
+    <img class="post-thumb" src="{{ . | relURL }}" alt="" loading="lazy" decoding="async">
+    {{- else }}
+    <span class="post-thumb post-thumb-empty" aria-hidden="true"></span>
+    {{- end }}
+    <span class="post-row-text">
+      <span class="post-row-title">{{ .Title }}</span>
+      <span class="post-row-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>{{ range .Params.tags }} <span class="tag">#{{ . }}</span>{{ end }}</span>
+    </span>
+  </a>
+</li>

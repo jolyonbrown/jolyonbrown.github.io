@@ -1,0 +1,21 @@
+{{- /* Rendered as /plan.txt. Keep in sync with index.dotplan.plan (/.plan). */ -}}
+{{- $home := . -}}
+{{- $updated := time.AsTime $home.Params.planUpdated -}}
+{{- $p := site.Data.cv.profile -}}
+{{ printf "%-40s%s" (printf "Login: %s" site.Params.login) (printf "Name: %s" $p.name) }}
+{{ printf "%-40s%s" (printf "Role: %s" $p.headline) (printf "Mail: %s" site.Params.email) }}
+{{ printf "%-40s%s" "Web: https://jolyonbrown.com" (printf "Plan updated: %s" ($updated.Format "Mon 2 Jan 2006")) }}
+Plan:
+{{ $home.RawContent | strings.TrimSpace }}
+
+Recent writing:
+{{- range first 5 (where site.RegularPages "Section" "posts") }}
+  {{ .Date.Format "2006-01-02" }}  {{ .Title }}
+              {{ .Permalink }}
+{{- end }}
+
+CV:       {{ "cv/" | absURL }}
+Projects: {{ "projects/" | absURL }}
+Agents:   {{ site.Params.mcpEndpoint }} (MCP, read-only)
+
+Hint: on the website, try typing "green".

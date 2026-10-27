@@ -1,0 +1,21 @@
+# Linux Format "Administeria" column, 2014-2017.
+# A selection - add issue numbers or links as you dig them out.
+
+- year: 2014
+  topic: Docker
+  note: Multiple tutorials during early adoption
+- year: 2014
+  topic: OpenStack
+  note: Four articles on cloud infrastructure
+- year: 2015
+  topic: Kubernetes
+  note: Two-part series, one year after the Kubernetes release
+- year: 2015
+  topic: AWS / Ansible
+  note: Three-part cloud automation series
+- year: 2015
+  topic: ELK Stack
+  note: In-depth observability platform guide (2015-2016)
+- year: 2016
+  topic: Prometheus
+  note: Early coverage of what's now the standard monitoring solution

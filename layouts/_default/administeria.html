@@ -1,0 +1,16 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <p class="page-desc">{{ .Description }}</p>
+</header>
+<div class="prose">{{ .Content }}</div>
+<ol class="column-list">
+  {{- range sort site.Data.administeria "year" }}
+  <li>
+    <span class="column-year">{{ .year }}</span>
+    <span class="column-topic">{{ .topic }}</span>
+    <span class="column-note">{{ .note }}</span>
+  </li>
+  {{- end }}
+</ol>
+{{ end }}

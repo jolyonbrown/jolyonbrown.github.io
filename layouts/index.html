@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{- $updated := time.AsTime .Params.planUpdated }}
+<section class="finger" aria-labelledby="finger-title">
+  <h1 id="finger-title" class="prompt"><span class="ps1" aria-hidden="true">$</span> finger {{ site.Params.login }}@jolyonbrown.com</h1>
+  <div class="terminal">
+    <dl class="finger-fields">
+      <div><dt>Login:</dt><dd>{{ site.Params.login }}</dd></div>
+      <div><dt>Name:</dt><dd>{{ site.Data.cv.profile.name }}</dd></div>
+      <div><dt>Role:</dt><dd>{{ site.Data.cv.profile.headline }}</dd></div>
+      <div><dt>Mail:</dt><dd><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></dd></div>
+      <div class="wide"><dt>Plan updated:</dt><dd><time datetime="{{ $updated.Format "2006-01-02" }}">{{ $updated.Format "Mon 2 Jan 2006" }}</time></dd></div>
+    </dl>
+    <p class="plan-label">Plan:</p>
+    <div class="plan-text">{{ .Content }}</div>
+  </div>
+  <p class="finger-hint">Prefer a real terminal? <code>curl jolyonbrown.com/.plan</code></p>
+</section>
+
+<section class="home-section" aria-labelledby="recent-title">
+  <h2 id="recent-title" class="section-prompt"><span class="ps1" aria-hidden="true">$</span> ls -t posts/ | head -5</h2>
+  {{- $posts := where site.RegularPages "Section" "posts" }}
+  <ul class="post-list">
+    {{- range first 5 $posts }}
+      {{ partial "post-row.html" . }}
+    {{- end }}
+  </ul>
+  <p class="more"><a href="{{ "/posts/" | relURL }}">All writing &rarr;</a></p>
+</section>
+
+<section class="home-section" aria-labelledby="dirs-title">
+  <h2 id="dirs-title" class="section-prompt"><span class="ps1" aria-hidden="true">$</span> ls ~</h2>
+  <ul class="dir-grid">
+    <li><a href="{{ "/projects/" | relURL }}"><span class="dir-name">projects/</span><span class="dir-desc">The workshop: built, building and abandoned</span></a></li>
+    <li><a href="{{ "/cv/" | relURL }}"><span class="dir-name">cv/</span><span class="dir-desc">Thirty years of keeping things running</span></a></li>
+    <li><a href="{{ "/administeria/" | relURL }}"><span class="dir-name">administeria/</span><span class="dir-desc">My Linux Format column, 2014-2017</span></a></li>
+    <li><a href="{{ "/about/" | relURL }}"><span class="dir-name">about/</span><span class="dir-desc">Why it's called .plan</span></a></li>
+  </ul>
+</section>
+
+{{ partial "mcp-callout.html" . }}
+{{ end }}

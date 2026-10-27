@@ -10,6 +10,8 @@ draft: false
 
 Mainly planning on using it to jot down notes about the various projects I've got on the go (at the moment most of these involve AI/ML). This is my workshop in public. There'll be project notes, interesting finds, and whatever else seems worth sharing. No guarantees on consistency of topic.
 
+If you'd rather read it the old way, `curl jolyonbrown.com/.plan` works too.
+
 ---
 
 ### Get in touch

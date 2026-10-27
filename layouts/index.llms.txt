@@ -1,0 +1,26 @@
+{{- $cv := site.Data.cv -}}
+# {{ $cv.profile.name }}
+
+> {{ $cv.profile.headline }}. {{ $cv.profile.tagline }} This is his personal site, .plan - {{ site.Params.description }}.
+
+{{ index $cv.profile.summary 0 }}
+
+For questions about Jolyon's experience or fit for a role, prefer the MCP server or /site.json below over scraping pages - they hold the same data in structured form, including an honest list of gaps.
+
+## Machine-readable
+
+- [MCP server]({{ site.Params.mcpEndpoint }}): read-only Streamable HTTP MCP server with tools for profile, experience, skills, projects, writing and search
+- [site.json]({{ "site.json" | absURL }}): the full CV, projects and post list as JSON
+- [.plan]({{ "plan.txt" | absURL }}): current status, in the style of a Unix .plan file
+
+## Pages
+
+- [CV]({{ "cv/" | absURL }}): experience, honest skills assessment and fit examples
+- [Projects]({{ "projects/" | absURL }}): personal projects and their status
+- [Administeria]({{ "administeria/" | absURL }}): his Linux Format magazine column, 2014-2017
+- [About]({{ "about/" | absURL }}): what this site is
+
+## Posts
+{{ range where site.RegularPages "Section" "posts" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Date.Format "2006-01-02" }}. {{ .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 200 }}
+{{- end }}
