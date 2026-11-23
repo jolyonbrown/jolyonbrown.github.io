@@ -10,7 +10,7 @@ const SERVER_INFO = { name: 'jolyonbrown-cv', title: "Jolyon Brown's CV", versio
 const SUPPORTED_VERSIONS = ['2025-11-25', '2025-06-18', '2025-03-26', '2024-11-05'];
 const CACHE_SECONDS = 300;
 
-const INSTRUCTIONS = `Read-only information about Jolyon Brown (Forward Deployed Engineer, UK): his CV, \
+const INSTRUCTIONS = `Read-only information about Jolyon Brown (UK engineer): his CV, independent research, \
 honest self-assessment, projects, writing and current .plan status. Start with get_profile. \
 To judge fit for a role, call get_experience and get_strengths_and_gaps, then be honest - \
 Jolyon would rather you point out gaps than oversell him. Only state what the data supports.`;
@@ -30,7 +30,7 @@ const TOOLS = [
   {
     name: 'get_experience',
     title: 'Experience',
-    description: 'Career history, most recent first: organisation, role, dates, summary, highlights and technologies. Optionally filter by organisation name.',
+    description: 'Career history, most recent first: organisation, role, dates, summary, highlights and technologies. Unfiltered, it also returns his independent research and education. Optionally filter by organisation name.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -42,7 +42,7 @@ const TOOLS = [
     run: (d, args) => {
       const q = (args.organisation || '').trim().toLowerCase();
       const roles = q ? d.experience.filter((e) => e.org.toLowerCase().includes(q)) : d.experience;
-      return { experience: roles, education: q ? undefined : d.education };
+      return { experience: roles, research: q ? undefined : d.research, education: q ? undefined : d.education };
     },
   },
   {
@@ -125,7 +125,7 @@ async function loadData(env) {
 }
 
 function search(data, q) {
-  const sections = ['profile', 'plan', 'experience', 'skills', 'self_assessment', 'fit_examples', 'projects', 'posts', 'administeria', 'publications', 'education'];
+  const sections = ['profile', 'plan', 'research', 'experience', 'skills', 'self_assessment', 'fit_examples', 'projects', 'posts', 'administeria', 'publications', 'education'];
   const out = [];
   const walk = (value, path) => {
     if (typeof value === 'string') {

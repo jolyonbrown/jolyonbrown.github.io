@@ -15,6 +15,7 @@
     "site" site.Home.Permalink
     "plan" (dict "updated" ((time.AsTime .Params.planUpdated).Format "2006-01-02") "text" (.RawContent | strings.TrimSpace))
     "profile" $cv.profile
+    "research" $cv.research
     "experience" $cv.experience
     "skills" $cv.skills
     "self_assessment" $cv.self_assessment

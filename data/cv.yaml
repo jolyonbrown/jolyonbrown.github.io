@@ -4,8 +4,8 @@
 
 profile:
   name: Jolyon Brown
-  headline: Forward Deployed Engineer
-  status: Open to Forward Deployed Engineering & Agentic AI roles
+  headline: Platform Engineer · Identity Infrastructure & Agentic AI
+  status: Moving into empirical AI safety research
   tagline: Thirty years of production operations, now building agentic AI that ships.
   summary:
     - >-
@@ -22,14 +22,34 @@ profile:
       Most recently I've been a consulting engineer on Fusion (Enablis's agentic AI orchestration
       platform, built on AWS Bedrock AgentCore), where I built out the platform's MCP integration
       layers, and Tech Lead of a team building the next generation of healthcare worker APIs.
+      I'm an active member of the Enablis technical community - regularly trying out new AI
+      tooling and sharing the prototypes that come out of it.
     - >-
       Much of my career has been in security-critical, regulated environments: secure banking
       infrastructure, PCI-compliant payment design, and identity and access management at NHS England.
+    - >-
+      I'm now moving into empirical AI safety research, focused on monitoring and attribution for
+      AI agents: what an agent was shown, what it was authorised to do, and whether its own account
+      of its actions can be trusted.
   contact:
     email: jolyon@limilo.com
     linkedin: https://www.linkedin.com/in/jolyon-brown
     github: https://github.com/jolyonbrown
     website: https://jolyonbrown.com
+
+research:
+  - title: Anchoring in LLM agents
+    project: point.vote
+    year: 2026
+    url: https://github.com/jolyonbrown/point.vote
+    summary: >-
+      Designed and ran a controlled experiment testing whether a visible colleague's estimate
+      shifts frontier models' estimates, using point.vote - my planning-poker server where AI
+      agents vote alongside humans through REST and MCP. Built with Claude Code and Codex.
+    highlights:
+      - 13 experimental arms (blind, anchored, dose sweep, warning, authority) across ten models from Anthropic, OpenAI and Google; 40 trials per cell; ticket-cluster bootstrap confidence intervals and a negative control
+      - "Finding: estimates moved towards planted votes, yet in the first round only 1 of 240 explanations mentioned the visible vote - and when models were explicitly warned about anchoring, none of 240 did"
+      - Full harness, exact prompts, raw data and analysis published for reproduction
 
 experience:
   - org: Enablis
@@ -51,10 +71,11 @@ experience:
     via: Infinity Works (2014-2020), Mastek (2020-2022), BJSS/CGI (2022-present)
     summary: >-
       Senior platform engineer on national healthcare identity and access management
-      infrastructure. Ten years on the same critical system through three different consultancies.
+      infrastructure. Twelve years on the same critical system through three different consultancies.
       Started with on-premise Linux, Ansible and Microsoft SCVMM, migrated to AWS in 2021, and now
       work on both the AWS production system and its Azure-based replacement.
     highlights:
+      - Identifying every system that authenticates through the legacy CIS1 authentication service ahead of its retirement in February 2027 - reconstructing attribution from fragmentary logs and records with frontier LLMs, and estimating the clinical risk of withdrawing each system's access
       - Tech Lead of a team building the next generation of healthcare worker APIs
       - Production operations and incident response for an identity and access management system that serves the entire NHS and cannot go down
       - 24/7 on-call, working across both infrastructure and application layers at national scale
@@ -111,6 +132,8 @@ experience:
 skills:
   - area: Agentic AI
     items: [AWS Bedrock AgentCore, MCP (server & integration design), Claude Code, Codex, Agentic workflow design]
+  - area: Research & Evaluation
+    items: [Experiment design, LLM behavioural evaluation, Statistical analysis (bootstrap confidence intervals)]
   - area: Cloud & Infrastructure
     items: [AWS, Azure, Terraform, HA architecture]
   - area: Security & Compliance

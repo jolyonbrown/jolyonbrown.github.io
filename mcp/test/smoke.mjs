@@ -45,6 +45,8 @@ assert.match(nhs.experience[0].org, /NHS/);
 
 const all = await call('get_experience', {});
 assert.ok(all.experience.length >= 5 && all.education.length >= 1);
+assert.ok(all.research.length >= 1, 'research is returned unfiltered');
+assert.equal(nhs.research, undefined, 'filtered results stay focused on the organisation');
 
 const sg = await call('get_strengths_and_gaps', {});
 assert.ok(sg.self_assessment.gaps.length > 0, 'gaps must be exposed');
@@ -55,6 +57,8 @@ assert.ok((await call('get_writing', {})).posts.length > 0);
 const found = await call('search', { query: 'kubernetes' });
 assert.ok(found.count > 0);
 console.log(`search "kubernetes": ${found.count} matches, e.g. ${found.matches[0].path}`);
+
+assert.ok((await call('search', { query: 'anchoring' })).count > 0, 'research is searchable');
 
 r = await rpc('tools/call', { name: 'search', arguments: { query: 'k' } });
 assert.equal(r.body.error.code, -32602);
