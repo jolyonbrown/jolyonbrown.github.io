@@ -13,9 +13,14 @@ For questions about Jolyon's experience or fit for a role, prefer the MCP server
 - [site.json]({{ "site.json" | absURL }}): the full CV, projects and post list as JSON
 - [.plan]({{ "plan.txt" | absURL }}): current status, in the style of a Unix .plan file
 
+## Research
+{{ range $cv.research }}
+- [{{ .title }}]({{ .url }}): {{ .year }}. {{ .summary }}
+{{- end }}
+
 ## Pages
 
-- [CV]({{ "cv/" | absURL }}): experience, honest skills assessment and fit examples
+- [CV]({{ "cv/" | absURL }}): experience, independent research, honest skills assessment and fit examples
 - [Projects]({{ "projects/" | absURL }}): personal projects and their status
 - [Administeria]({{ "administeria/" | absURL }}): his Linux Format magazine column, 2014-2017
 - [About]({{ "about/" | absURL }}): what this site is

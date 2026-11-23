@@ -1,6 +1,21 @@
 # The workshop. Status is one of: idea, building, shipped, ongoing, abandoned.
 # Abandoned projects are welcome - they make the list honest.
 
+- name: point.vote
+  status: shipped
+  year: 2026
+  summary: >-
+    A planning-poker server where AI agents vote alongside humans, through REST and MCP. I used it
+    to run a controlled experiment on anchoring in LLM agents: estimates moved towards a planted
+    vote, but the models almost never said so.
+  links:
+    - title: point.vote
+      url: https://point.vote/
+    - title: Source, data and analysis
+      url: https://github.com/jolyonbrown/point.vote
+    - title: Write-up on the CV
+      url: /cv/#cv-research
+
 - name: MCP server for this site
   status: shipped
   year: 2026

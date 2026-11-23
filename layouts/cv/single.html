@@ -21,6 +21,29 @@
     </div>
   </section>
 
+  {{- with $cv.research }}
+  <section class="cv-section" aria-labelledby="cv-research">
+    <h2 id="cv-research" class="cv-h">Independent research</h2>
+    <ol class="timeline">
+      {{- range . }}
+      <li class="job">
+        <div class="job-head">
+          <h3 class="job-org">{{ .title }}</h3>
+          <span class="job-dates">{{ .year }}</span>
+        </div>
+        <p class="job-role">{{ .project }}{{ with .url }} <span class="job-loc">· <a href="{{ . }}">{{ strings.TrimPrefix "https://" . }}</a></span>{{ end }}</p>
+        <p class="job-summary">{{ .summary }}</p>
+        {{- with .highlights }}
+        <ul class="job-highlights">
+          {{- range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+  {{- end }}
+
   <section class="cv-section" aria-labelledby="cv-exp">
     <h2 id="cv-exp" class="cv-h">Experience</h2>
     <ol class="timeline">
