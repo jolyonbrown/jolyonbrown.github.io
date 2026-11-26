@@ -54,7 +54,7 @@ research:
 experience:
   - org: Enablis
     role: Consulting Engineer, Fusion
-    dates: 2026 - Present
+    dates: 2026 - May 2026
     via: Limilo Ltd
     summary: >-
       Augmented a small team building Fusion, Enablis's agentic AI orchestration platform,
@@ -173,7 +173,7 @@ self_assessment:
 
 fit_examples:
   - verdict: strong
-    heading: Strong match - this is the job I'm doing now
+    heading: Strong match - this is work I've been doing
     role: Forward Deployed Engineer at an AI platform company, embedded with enterprise customers in regulated industries, building agent and MCP integrations.
     assessment: >-
       I've built MCP integration layers and AgentCore workflows with human-in-the-loop approval
