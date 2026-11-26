@@ -15,6 +15,22 @@
     - title: Source
       url: https://github.com/jolyonbrown/omega_rust
 
+- name: Blast-a-Pic
+  status: shipped
+  year: 2026
+  summary: >-
+    A calm bead-blasting puzzle for the iPad, with no ads, no lives and no timers. Each level is a
+    picture made of ironing beads; turrets can only hit beads they can see from below, so you peel
+    each picture from the bottom up. Nearly 60 levels across six sets, every one checked by a
+    solver so it can always be beaten. Plain HTML, CSS and JavaScript, and it works offline.
+  links:
+    - title: Play it
+      url: https://jolyonbrown.com/blast-a-pic/
+    - title: itch.io
+      url: https://jolyonbrown.itch.io/blast-a-pic
+    - title: Source
+      url: https://github.com/jolyonbrown/blast-a-pic
+
 - name: point.vote
   status: shipped
   year: 2026
