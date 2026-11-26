@@ -1,6 +1,20 @@
 # The workshop. Status is one of: idea, building, shipped, ongoing, abandoned.
 # Abandoned projects are welcome - they make the list honest.
 
+- name: Omega Rust
+  status: shipped
+  year: 2026
+  summary: >-
+    A vector-graphics homage to Midway's 1981 arcade game Omega Race, written in Rust. Everything
+    on screen is line segments - even the stroke-font text - with a phosphor glow pipeline, and
+    all the sound is synthesised in the style of the original's sound chips. Claude directed it
+    as creative lead and Codex built it milestone by milestone. Playable in the browser.
+  links:
+    - title: Play on itch.io
+      url: https://jolyonbrown.itch.io/omega-rust
+    - title: Source
+      url: https://github.com/jolyonbrown/omega_rust
+
 - name: point.vote
   status: shipped
   year: 2026
