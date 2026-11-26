@@ -2,7 +2,7 @@
 title: ".plan"
 # Bump this whenever you edit the plan below. It shows as "Plan updated" on the
 # homepage, and in /.plan and /plan.txt.
-planUpdated: 2026-11-26
+planUpdated: 2026-11-27
 ---
 Currently:
   * Tech Lead on the next generation of NHS healthcare worker APIs
@@ -17,6 +17,9 @@ Recently:
     agentic AI platform (AWS Bedrock AgentCore)
 
 Tinkering:
+  * Games. Omega Rust (a vector homage to the 1981 arcade game Omega
+    Race) and Blast-a-Pic (a calm bead-blasting puzzle) are both out -
+    see projects
   * Trackballs. Still threatening to build my own; trying kits first
 
 Reading:
