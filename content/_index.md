@@ -2,17 +2,19 @@
 title: ".plan"
 # Bump this whenever you edit the plan below. It shows as "Plan updated" on the
 # homepage, and in /.plan and /plan.txt.
-planUpdated: 2026-11-23
+planUpdated: 2026-11-26
 ---
 Currently:
-  * Building MCP integrations and agent workflows on Fusion, Enablis's
-    agentic AI platform (AWS Bedrock AgentCore)
   * Tech Lead on the next generation of NHS healthcare worker APIs
   * Moving into empirical AI safety research: monitoring and attribution
     for AI agents. First study is out - anchoring in LLM agents, run on
     point.vote (see the CV)
   * Rebuilt this site. The AI chatbot has gone - there's an MCP server
     instead, so you can point your own agent at my CV
+
+Recently:
+  * Built MCP integrations and agent workflows on Fusion, Enablis's
+    agentic AI platform (AWS Bedrock AgentCore)
 
 Tinkering:
   * Trackballs. Still threatening to build my own; trying kits first
