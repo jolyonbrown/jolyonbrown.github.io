@@ -31,6 +31,19 @@
     - title: Source
       url: https://github.com/jolyonbrown/blast-a-pic
 
+- name: NetHack-C64
+  status: building
+  year: 2026
+  summary: >-
+    NetHack 3.4.3 - the real thing, compiled from its own C - on Commodore hardware. It already
+    plays on a C128 with a Magic Desk 128 cartridge and a 4 MB REU (in the VICE emulator), with
+    saving, restoring and trips between levels. Next comes the deeper game, then squeezing it onto
+    a C64 with an EasyFlash cartridge; a stock C64 is the white whale. Getting this far took a
+    heavily patched Oscar64 compiler. A long-term labour of love, built with Claude Code and Codex.
+  links:
+    - title: Source
+      url: https://github.com/jolyonbrown/nethack64
+
 - name: point.vote
   status: shipped
   year: 2026
