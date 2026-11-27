@@ -20,6 +20,9 @@ Tinkering:
   * Games. Omega Rust (a vector homage to the 1981 arcade game Omega
     Race) and Blast-a-Pic (a calm bead-blasting puzzle) are both out -
     see projects
+  * NetHack on a Commodore. The real NetHack 3.4.3, compiled from its
+    own C, now plays on a C128 (in VICE). The C64 is next; a stock C64
+    is the white whale
   * Trackballs. Still threatening to build my own; trying kits first
 
 Reading:
