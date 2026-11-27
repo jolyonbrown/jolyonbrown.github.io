@@ -32,7 +32,7 @@
       url: https://github.com/jolyonbrown/blast-a-pic
 
 - name: NetHack-C64
-  status: building
+  status: ongoing
   year: 2026
   summary: >-
     NetHack 3.4.3 - the real thing, compiled from its own C - on Commodore hardware. It already
