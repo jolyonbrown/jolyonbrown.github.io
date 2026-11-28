@@ -2,7 +2,7 @@
 title: ".plan"
 # Bump this whenever you edit the plan below. It shows as "Plan updated" on the
 # homepage, and in /.plan and /plan.txt.
-planUpdated: 2026-11-27
+planUpdated: 2026-11-28
 ---
 Currently:
   * Tech Lead on the next generation of NHS healthcare worker APIs
@@ -24,6 +24,10 @@ Tinkering:
     own C, now plays on a C128 (in VICE). The C64 is next; a stock C64
     is the white whale
   * Trackballs. Still threatening to build my own; trying kits first
+
+Open source:
+  * Working on patches for the C64 C compiler (Oscar64):
+    https://github.com/jolyonbrown/oscar64
 
 Reading:
   * Notes on what I've read go up as I get round to them
